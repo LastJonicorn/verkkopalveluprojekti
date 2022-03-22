@@ -41,7 +41,7 @@ function App() {
     </Carousel.Caption>
   </Carousel.Item>
 </Carousel></div>
-    <div class="col-4">col-4</div>
+    <div class="col-4">djfghfgkjgjlfdljfsjlfsjlfsljjlsljsjlljjlgsrgjl</div>
   </div>
   </div>
   );
