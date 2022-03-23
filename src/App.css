@@ -1,6 +1,7 @@
 .App {
   text-align: center;
   background-color: beige;
+  max-width: 100%;
 }
 
 .App-logo {
@@ -61,6 +62,7 @@ h1{
 .blogi{
   background-color:blanchedalmond;
   border: 5px solid black;
+  height: 10em;
   border-radius: 15px;
   font-size: 1.5em;
 }

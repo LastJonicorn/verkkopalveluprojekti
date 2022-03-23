@@ -15,7 +15,7 @@ function App() {
 
 {/*Navbar alkaa tästä*/}
 
-<Navbar bg="dark" expand="lg">
+<Navbar bg="dark" expand="lg" sticky="top" >
   <Container fluid>
     <Navbar.Brand href="#"><p class="navtext">LOGO</p></Navbar.Brand>
     <Navbar.Toggle aria-controls="navbarScroll" />
