@@ -67,7 +67,9 @@ h1{
 }
 
 .suosittelut{
-  background-color: bisque;
+  background-image: url("../public/Kuvat/Suosittelut.jpg");
+  background-position: center;
+  background-size:contain;
   margin-top: 1em;
   height: 10em;
   width: 15em;
