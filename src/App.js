@@ -17,7 +17,7 @@ function App() {
 
 <Navbar bg="dark" expand="lg">
   <Container fluid>
-    <Navbar.Brand href="#">LOGO</Navbar.Brand>
+    <Navbar.Brand href="#"><p class="navtext">LOGO</p></Navbar.Brand>
     <Navbar.Toggle aria-controls="navbarScroll" />
     <Navbar.Collapse id="navbarScroll">
       <Nav
@@ -25,9 +25,9 @@ function App() {
         style={{ maxHeight: '100px' }}
         navbarScroll
       >
-        <Nav.Link href="#action1">Etusivu</Nav.Link>
-        <Nav.Link href="#action2">FAQ</Nav.Link>
-        <NavDropdown title="Kategoriat" id="navbarScrollingDropdown">
+        <Nav.Link href="#action1"><p class="navtext">Etusivu</p></Nav.Link>
+        <Nav.Link href="#action2"><p class="navtext">FAQ</p></Nav.Link>
+        <NavDropdown title="Kategoriat" class="navtext" id="navbarScrollingDropdown">
           <NavDropdown.Item href="#action3">Roolipelit</NavDropdown.Item>
           <NavDropdown.Item href="#action4">Korttipelit</NavDropdown.Item>
           <NavDropdown.Divider />
