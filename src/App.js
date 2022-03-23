@@ -64,7 +64,7 @@ function App() {
       alt="First slide"
     />
     <Carousel.Caption>
-      <h5>Tässä peli nro 1</h5>
+      <h5 class="pelinimi">Tässä peli nro 1</h5>
       <p class="kuvaus">Vau mikä peli. Haluaisit varmasti ostaa tämän!</p>
     </Carousel.Caption>
   </Carousel.Item>
@@ -75,8 +75,8 @@ function App() {
       alt="Second slide"
     />
     <Carousel.Caption>
-      <h5>Tässä peli nro 2</h5>
-      <p>Vau mikä peli. Haluaisit varmasti ostaa tämän!</p>
+      <h5 class="pelinimi">Tässä peli nro 2</h5>
+      <p class="kuvaus">Vau mikä peli. Haluaisit varmasti ostaa tämän!</p>
     </Carousel.Caption>
   </Carousel.Item>
   <Carousel.Item>
@@ -86,8 +86,8 @@ function App() {
       alt="Third slide"
     />
     <Carousel.Caption>
-      <h5>Tässä peli nro 3</h5>
-      <p>Vau mikä peli. Haluaisit varmasti ostaa tämän!</p>
+      <h5 class="pelinimi">Tässä peli nro 3</h5>
+      <p class="kuvaus">Vau mikä peli. Haluaisit varmasti ostaa tämän!</p>
     </Carousel.Caption>
   </Carousel.Item>
 </Carousel></div>

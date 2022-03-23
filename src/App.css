@@ -84,8 +84,14 @@ footer{
   }
 }
 
+/* Carouselin pelien nimet ja kuvaukset alalaitaan */
+
+.pelinimi {
+  position: relative;
+  top: 60px;
+}
+
 .kuvaus {
   position: relative;
-  top: 6px;
-  padding: 200px;
+  top: 60px;
 }
