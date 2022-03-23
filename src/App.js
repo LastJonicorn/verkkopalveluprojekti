@@ -75,8 +75,10 @@ function App() {
       alt="Second slide"
     />
     <Carousel.Caption>
-      <h5 class="pelinimi">Tässä peli nro 2</h5>
-      <p class="kuvaus">Vau mikä peli. Haluaisit varmasti ostaa tämän!</p>
+      <div class="peliteksti">
+        <h5 class="pelinimi">Tässä peli nro 2</h5>
+        <p class="kuvaus">Vau mikä peli. Haluaisit varmasti ostaa tämän!</p>
+      </div>
     </Carousel.Caption>
   </Carousel.Item>
   <Carousel.Item>
