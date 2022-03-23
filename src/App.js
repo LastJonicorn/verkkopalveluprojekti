@@ -28,9 +28,10 @@ function App() {
         <Nav.Link href="#action1"><p class="navtext">Etusivu</p></Nav.Link>
         <Nav.Link href="#action2"><p class="navtext">FAQ</p></Nav.Link>
         <NavDropdown title="Kategoriat" class="navtext" id="navbarScrollingDropdown">
-          <NavDropdown.Item href="#action3">Roolipelit</NavDropdown.Item>
-          <NavDropdown.Item href="#action4">Korttipelit</NavDropdown.Item>
-          <NavDropdown.Item href="#action5">Deck Building</NavDropdown.Item>
+          <NavDropdown.Item href="#action3">Lautapelit</NavDropdown.Item>
+          <NavDropdown.Item href="#action4">Roolipelit</NavDropdown.Item>
+          <NavDropdown.Item href="#action5">Korttipelit</NavDropdown.Item>
+          <NavDropdown.Item href="#action6">Deck Building</NavDropdown.Item>
         </NavDropdown>
         <Nav.Link href="#" class="navtext">
           Link

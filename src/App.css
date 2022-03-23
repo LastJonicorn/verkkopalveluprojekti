@@ -99,6 +99,7 @@ footer{
 .kuvaus {
   position: relative;
   top: 60px;
+  background: rgba(0, 0, 0, 0.6) /* Green background with 30% opacity */
 }
 
 
