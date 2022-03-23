@@ -28,13 +28,15 @@
   color: #61dafb;
 }
 
+h1{
+  padding: 1.5em;
+}
+
 .carousel img{
   margin: auto;
   width: 40%;
-  max-height: 30em;
   align-items: center;
-
-  border: 2px solid black;
+  padding-top: 3em;
 }
 
 .carousel-caption h5{
@@ -48,9 +50,18 @@
 }
 
 .col-4{
-  font-size: 2em;
-  border: 2px solid black;
   padding: 2em;
+}
+
+.blogi{
+  border: 2px solid black;
+  font-size: 1.5em;
+}
+
+.suosittelut{
+  margin-top: 1em;
+  border: 2px solid black;
+  font-size: 1.5em;
 }
 
 .suosittelut{
