@@ -30,10 +30,7 @@ function App() {
         <NavDropdown title="Kategoriat" class="navtext" id="navbarScrollingDropdown">
           <NavDropdown.Item href="#action3">Roolipelit</NavDropdown.Item>
           <NavDropdown.Item href="#action4">Korttipelit</NavDropdown.Item>
-          <NavDropdown.Divider />
-          <NavDropdown.Item href="#action5">
-            Deck Building
-          </NavDropdown.Item>
+          <NavDropdown.Item href="#action5">Deck Building</NavDropdown.Item>
         </NavDropdown>
         <Nav.Link href="#">
           Link
