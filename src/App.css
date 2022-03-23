@@ -81,3 +81,8 @@ footer{
     transform: rotate(360deg);
   }
 }
+
+.kuvaus {
+  position: relative;
+  top: 6px;
+}

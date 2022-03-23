@@ -65,7 +65,7 @@ function App() {
     />
     <Carousel.Caption>
       <h5>Tässä peli nro 1</h5>
-      <p>Vau mikä peli. Haluaisit varmasti ostaa tämän!</p>
+      <p class="kuvaus">Vau mikä peli. Haluaisit varmasti ostaa tämän!</p>
     </Carousel.Caption>
   </Carousel.Item>
   <Carousel.Item>
