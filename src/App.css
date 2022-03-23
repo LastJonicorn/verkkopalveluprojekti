@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  background-color: beige;
 }
 
 .App-logo {
@@ -34,7 +35,7 @@ h1{
 
 .carousel img{
   margin: auto;
-  width: 40%;
+  height: 500px;
   align-items: center;
   padding-top: 3em;
 }
@@ -54,12 +55,14 @@ h1{
 }
 
 .blogi{
+  background-color:blanchedalmond;
   border: 5px solid black;
   border-radius: 15px;
   font-size: 1.5em;
 }
 
 .suosittelut{
+  background-color: bisque;
   margin-top: 1em;
   border: 5px solid black;
   border-radius: 15px;
