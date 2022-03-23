@@ -56,9 +56,12 @@ h1{
 }
 
 .blogi{
-  background-color:blanchedalmond;
+  background-image: url("../public/Kuvat/blogi.jpg");
+  background-position: center;
+  background-size:cover;
   border: 5px solid black;
-  height: 10em;
+  height: 13em;
+  width: 15em;
   border-radius: 15px;
   font-size: 1.5em;
 }
@@ -66,6 +69,8 @@ h1{
 .suosittelut{
   background-color: bisque;
   margin-top: 1em;
+  height: 10em;
+  width: 15em;
   border: 5px solid black;
   border-radius: 15px;
   font-size: 1.5em;
