@@ -8,7 +8,7 @@ function App() {
   
   return (
     <div className="App">
-      <h1>Lautapelikahvila Weleho</h1>
+      <h1>Lautapelikauppa Weleho</h1>
 
 {/*Navbar alkaa tästä*/}
 
