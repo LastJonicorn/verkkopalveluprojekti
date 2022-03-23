@@ -32,7 +32,7 @@ function App() {
           <NavDropdown.Item href="#action4">Korttipelit</NavDropdown.Item>
           <NavDropdown.Item href="#action5">Deck Building</NavDropdown.Item>
         </NavDropdown>
-        <Nav.Link href="#">
+        <Nav.Link href="#" class="navtext">
           Link
         </Nav.Link>
       </Nav>
