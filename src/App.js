@@ -4,7 +4,7 @@ import Carousel from 'react-bootstrap/Carousel';
 import { BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 import Nav from './Pages/Nav';
 import Etusivu from './Pages/Etusivu';
-import faq from './Pages/faq';
+import faq from './Pages/kysymykset';
 
 const URL = '';
 
@@ -19,7 +19,7 @@ function App() {
   <Nav />
   <Routes>
     <Route path="/" element={Etusivu}/>
-    <Route path="/faq" element={faq}/>
+    <Route path="/kysymykset" element={faq}/>
   </Routes>
 </Router>
 
