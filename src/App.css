@@ -1,6 +1,6 @@
 .App {
   text-align: center;
-  background-color: beige;
+  background-color: #f8f1ff;
   max-width: 100%;
 }
 
@@ -16,7 +16,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #534d56;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -83,7 +83,7 @@ h1{
 }
 
 footer{
-  background-color: aqua;
+  background-color: #decdf5;
   height: 6em;
 }
 
