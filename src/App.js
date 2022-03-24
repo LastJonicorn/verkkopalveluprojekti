@@ -14,7 +14,7 @@ function App() {
     <div className="App" >
      <div className='kauppaid'>
       <h2 >LAUTAPELIKAUPPA</h2>
-      <h2>WELEHO</h2>
+      <h1>WELEHO</h1>
       </div>
 
 {/*Navbar alkaa tästä*/}

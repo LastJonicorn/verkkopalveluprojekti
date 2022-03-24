@@ -43,8 +43,12 @@
   color: #61dafb;
 }
 
+h2{
+  padding: 1.3em;
+}
+
 h1{
-  padding: 1.5em;
+  padding-bottom: 0.7em;
 }
 
 .carousel img{
