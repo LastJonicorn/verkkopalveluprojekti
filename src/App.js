@@ -1,8 +1,7 @@
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.css';
 import Carousel from 'react-bootstrap/Carousel';
-import Navbar from 'react-bootstrap/Navbar';
-import {Container, Nav, NavDropdown, Form, FormControl, Button} from 'react-bootstrap';
+import { BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 import { useEffect } from 'react';
 
 const URL = '';
@@ -14,41 +13,16 @@ function App() {
       <h1>Lautapelikauppa Weleho</h1>
 
 {/*Navbar alkaa tästä*/}
-
-<Navbar bg="light" expand="lg" sticky="top" >
-  <Container fluid>
-    <Navbar.Brand href="#"><p class="navtext">LOGO</p></Navbar.Brand>
-    <Navbar.Toggle aria-controls="navbarScroll" />
-    <Navbar.Collapse id="navbarScroll">
-      <Nav
-        className="me-auto my-2 my-lg-0"
-        style={{ maxHeight: '100px' }}
-        navbarScroll
-      >
-        <Nav.Link href="#action1"><p class="navtext">Etusivu</p></Nav.Link>
-        <Nav.Link href="#action2"><p class="navtext">FAQ</p></Nav.Link>
-        <NavDropdown title="Kategoriat" class="navtext" id="navbarScrollingDropdown">
-          <NavDropdown.Item href="#action3">Lautapelit</NavDropdown.Item>
-          <NavDropdown.Item href="#action4">Roolipelit</NavDropdown.Item>
-          <NavDropdown.Item href="#action5">Korttipelit</NavDropdown.Item>
-          <NavDropdown.Item href="#action6">Deck Building</NavDropdown.Item>
-        </NavDropdown>
-        <Nav.Link href="#" class="navtext">
-          Link
-        </Nav.Link>
-      </Nav>
-      <Form className="d-flex">
-        <FormControl
-          type="search"
-          placeholder="Hae"
-          className="me-2"
-          aria-label="Search"
-        />
-        <Button variant="outline-success">Hae</Button>
-      </Form>
-    </Navbar.Collapse>
-  </Container>
-</Navbar>
+<Router>
+  <nav classname='nav'>
+      <h3>LOGO</h3>
+      <ul className='nav-links'>
+        <li>Etusivu</li>
+        <li>FAQ</li>
+        <li>Kategoriat</li>
+      </ul>
+  </nav>
+</Router>
 
 {/*Grid Layout alkaa tästä*/}
 
