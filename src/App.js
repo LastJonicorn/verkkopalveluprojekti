@@ -11,8 +11,11 @@ const URL = '';
 function App() {
   
   return (
-    <div className="App">
-      <h1>Lautapelikauppa Weleho</h1>
+    <div className="App" >
+     <div className='kauppaid'>
+      <h2 >LAUTAPELIKAUPPA</h2>
+      <h1>WELEHO</h1>
+      </div>
 
 {/*Navbar alkaa tästä*/}
 <Router>

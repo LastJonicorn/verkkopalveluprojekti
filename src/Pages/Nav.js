@@ -2,7 +2,8 @@ import '../App.css';
 import 'bootstrap/dist/css/bootstrap.css';
 
 function App() {
-  
+
+        
   return (
     <nav classname='nav'>
       <h3>LOGO</h3>
@@ -12,6 +13,7 @@ function App() {
         <li>Kategoriat</li>
       </ul>
     </nav>
+    
   );
 }
 

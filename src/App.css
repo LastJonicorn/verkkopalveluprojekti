@@ -1,8 +1,15 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@700&display=swap');
+
+
+
 .App {
   text-align: center;
   background-color: #f8f1ff;
   max-width: 100%;
 }
+
+
 
 .App-logo {
   height: 40vmin;
@@ -26,12 +33,22 @@
   color: white;
 }
 
+.kauppaid{
+  font-family: 'Josefin Slab', serif;
+  
+  padding-top: 20px;
+}
+
 .App-link {
   color: #61dafb;
 }
 
+h2{
+  padding: 1.3em;
+}
+
 h1{
-  padding: 1.5em;
+  padding-bottom: 0.7em;
 }
 
 .carousel img{
