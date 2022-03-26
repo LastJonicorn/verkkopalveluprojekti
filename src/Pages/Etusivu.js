@@ -54,7 +54,12 @@ function App() {
       <p class="kuvaus">Vau mikä peli. Haluaisit varmasti ostaa tämän!</p>
     </Carousel.Caption>
   </Carousel.Item>
-</Carousel></div>
+</Carousel>
+<br></br>
+<p>
+  Tuleeko tähän vielä jokin oma juttunsa? Kuukauden suosituimmat tuotteet? Alennukset?
+</p>
+</div>
 
 {/*Grid Layout toinen puoli alkaa tästä*/}
 
