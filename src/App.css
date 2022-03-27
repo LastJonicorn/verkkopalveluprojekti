@@ -72,6 +72,10 @@ h1{
   padding: 2em;
 }
 
+.logo{
+  scale: 10%;
+}
+
 .blogi{
   background-image: url("../public/Kuvat/blogi.jpg");
   background-position: center;

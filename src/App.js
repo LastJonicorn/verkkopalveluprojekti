@@ -4,7 +4,6 @@ import Carousel from 'react-bootstrap/Carousel';
 import { BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 import Nav from './Pages/Nav';
 import Etusivu from './Pages/Etusivu';
-import faq from './Pages/kysymykset';
 
 const URL = '';
 
@@ -18,14 +17,7 @@ function App() {
       </div>
 
 {/*Navbar alkaa tästä*/}
-<Router>
   <Nav />
-  <Routes>
-    <Route path="/" element={Etusivu}/>
-    <Route path="./Pages/kysymykset" element={faq}/>
-  </Routes>
-</Router>
-
 {/*Grid Layout alkaa tästä*/}
 
 <Etusivu />

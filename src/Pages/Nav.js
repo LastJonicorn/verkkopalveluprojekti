@@ -1,6 +1,5 @@
 import '../App.css';
 import 'bootstrap/dist/css/bootstrap.css';
-import Carousel from 'react-bootstrap/Carousel';
 import Navbar from 'react-bootstrap/Navbar';
 import {Container, Nav, NavDropdown, Form, FormControl, Button} from 'react-bootstrap';
 
@@ -10,7 +9,12 @@ function App() {
   return (
 <Navbar bg="white" expand="lg">
   <Container fluid>
-    <Navbar.Brand href="#">LOGO</Navbar.Brand>
+    <Navbar.Brand href="#">
+      <img 
+      src='../Kuvat/logo.png'
+      className='logo'
+      />
+    </Navbar.Brand>
     <Navbar.Toggle aria-controls="navbarScroll" />
     <Navbar.Collapse id="navbarScroll">
       <Nav
