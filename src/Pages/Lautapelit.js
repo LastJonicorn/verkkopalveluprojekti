@@ -13,8 +13,8 @@ function App() {
 
 {/*Grid Layout alkaa tästä*/}
 
-    <div class="row">
-    <div class="col-7">
+    <div className="row">
+    <div className="col-7">
 
 {/*Carousel alkaa tästä*/}
 
@@ -26,8 +26,8 @@ function App() {
       alt="First slide"
     />
     <Carousel.Caption>
-      <h5 class="pelinimi">Tässä peli nro 1</h5>
-      <p class="kuvaus">Vau mikä peli. Haluaisit varmasti ostaa tämän!</p>
+      <h5 className="pelinimi">Tässä peli nro 1</h5>
+      <p className="kuvaus">Vau mikä peli. Haluaisit varmasti ostaa tämän!</p>
     </Carousel.Caption>
   </Carousel.Item>
   <Carousel.Item>
@@ -37,9 +37,9 @@ function App() {
       alt="Second slide"
     />
     <Carousel.Caption>
-      <div class="peliteksti">
-        <h5 class="pelinimi">Tässä peli nro 2</h5>
-        <p class="kuvaus">Vau mikä peli. Haluaisit varmasti ostaa tämän!</p>
+      <div className="peliteksti">
+        <h5 className="pelinimi">Tässä peli nro 2</h5>
+        <p className="kuvaus">Vau mikä peli. Haluaisit varmasti ostaa tämän!</p>
       </div>
     </Carousel.Caption>
   </Carousel.Item>
@@ -50,20 +50,20 @@ function App() {
       alt="Third slide"
     />
     <Carousel.Caption>
-      <h5 class="pelinimi">Tässä peli nro 3</h5>
-      <p class="kuvaus">Vau mikä peli. Haluaisit varmasti ostaa tämän!</p>
+      <h5 className="pelinimi">Tässä peli nro 3</h5>
+      <p className="kuvaus">Vau mikä peli. Haluaisit varmasti ostaa tämän!</p>
     </Carousel.Caption>
   </Carousel.Item>
 </Carousel></div>
 
 {/*Grid Layout toinen puoli alkaa tästä*/}
 
-    <div class="col-4">
-    <div class="blogi">
+    <div className="col-4">
+    <div className="blogi">
       <h2>Tähän alkaa syntyä meidän blogikirjoituksemme.</h2>
       <p>Tänään söimme leipää</p>
     </div>
-    <div class="suosittelut">
+    <div className="suosittelut">
       <h2>Tähän alkaa syntyä meidän suosittelumme.</h2>
         <p>Suosittelen lihaa</p>
     </div>
