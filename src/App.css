@@ -101,6 +101,9 @@ h1{
   border-radius: 15px;
   font-size: 1.5em;
 }
+.blogi:hover{
+  box-shadow: 0px 0px 15px rgb(121, 23, 80);
+}
 
 .suosittelut{
   background-image: url("../public/Kuvat/Suosittelut.jpg");
@@ -113,7 +116,9 @@ h1{
   border-radius: 15px;
   font-size: 1.5em;
 }
-
+.suosittelut:hover{
+  box-shadow: 0px 0px 15px rgb(121, 23, 80);
+}
 footer{
   background-color: #cca7fc;
   height: 10em;
