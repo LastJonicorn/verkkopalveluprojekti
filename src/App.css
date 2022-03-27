@@ -107,15 +107,11 @@ h1{
   background-position: center;
   background-size:contain;
   margin-top: 1em;
-  height: 10em;
+  height: 15em;
   width: 15em;
   border: 5px solid black;
   border-radius: 15px;
   font-size: 1.5em;
-}
-
-.suosittelut{
-  height: 15em;
 }
 
 footer{
