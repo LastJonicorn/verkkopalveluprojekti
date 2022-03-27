@@ -136,7 +136,7 @@ footer{
   background: rgba(0, 0, 0, 0.6) /* Pelin kuvauksen taustaväri */
 }
 
-nav{
+#navbar{
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -152,4 +152,14 @@ nav{
   align-items: center;
   list-style: none;
   color: white;
+}
+
+#link{
+  font-size: 1.5em;
+  padding-left: 6em;
+}
+
+#navbarScrollingDropdown{
+  font-size: 1.5em;
+  padding-left: 6em;
 }
