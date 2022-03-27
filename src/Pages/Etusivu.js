@@ -101,7 +101,7 @@ function App() {
       <div className="col-lg-5 col-md-4 mb-4 mb-md-0">
       <img 
       src='../Kuvat/logo.png'
-      className='logo'
+      className='alalogo'
       />
       </div>
       <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12">      
