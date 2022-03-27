@@ -16,7 +16,7 @@ function App() {
 
       <h1>
         LAUTAPELIKAUPPA<br/> 
-        <p className='weleho'>WELEHO
+        <p className='weleho'>WELEH
         <img 
           src='../Kuvat/Koriste2.png'
           className='pallo'
