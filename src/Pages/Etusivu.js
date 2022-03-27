@@ -77,7 +77,7 @@ function App() {
   <footer className="info">
   <div className="container p-6">
     <div className="row">
-      <div className="col-lg-6 col-md-12 mb-4 mb-md-0">
+      <div className="col-lg-3 col-md-10 mb-4 mb-md-0">
         <h5 className="text">Yritystiedot</h5>
 
         <p>
@@ -96,7 +96,7 @@ function App() {
       className='alalogo'
       />
       </div>
-      <div class="col-xs-6 col-sm-4 right">
+      <div class="col-lg-4 col-sm-4 right">
                <h5 className="text-uppercase">oikee</h5>
 
         <p>

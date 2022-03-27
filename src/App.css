@@ -123,6 +123,10 @@ footer{
   height: 10em;
   text-align: center;
 }
+.alalogo{
+  height: 180px;
+  margin-top: -3%;
+}
 
 @keyframes App-logo-spin {
   from {
