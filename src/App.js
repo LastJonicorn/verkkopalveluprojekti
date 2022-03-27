@@ -19,7 +19,7 @@ function App() {
         <p className='weleho'>WELEHO
         <img 
           src='../Kuvat/Koriste2.png'
-          className='logo'
+          className='pallo'
         />
         </p>      
       </h1>
