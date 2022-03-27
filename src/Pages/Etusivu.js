@@ -90,14 +90,14 @@ function App() {
       </div>
 
      
-      <div className="col-lg-5 col-md-4 mb-4 mb-md-0">
+      <div className="col-lg-4 col-md-4 mb-4 mb-md-0">
       <img 
       src='../Kuvat/logo.png'
       className='alalogo'
       />
       </div>
-      <div class="col-lg-4 col-sm-4 right">
-               <h5 className="text-uppercase">oikee</h5>
+      <div class="col-lg-5 col-sm-4 right" id="oikea">
+               <h5 className="oikea">Sosiaaliset</h5>
 
         <p>
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste atque ea quis

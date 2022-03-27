@@ -122,10 +122,16 @@ footer{
   background-color: #cca7fc;
   height: 10em;
   text-align: center;
+  padding-bottom: 10%;
 }
 .alalogo{
   height: 180px;
   margin-top: -3%;
+  padding-left: 50%
+}
+#oikea{
+  padding-left: 20%;
+  padding-right: 0%;
 }
 
 @keyframes App-logo-spin {
