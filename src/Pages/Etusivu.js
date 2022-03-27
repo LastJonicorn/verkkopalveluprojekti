@@ -65,12 +65,12 @@ function App() {
 
     <div className="col-4">
     <div className="blogi">
-      <h2>Tähän alkaa syntyä meidän blogikirjoituksemme.</h2>
-      <p>Tänään söimme leipää</p>
+      <h2></h2>
+      <p></p>
     </div>
     <div className="suosittelut">
-      <h2>Tähän alkaa syntyä meidän suosittelumme.</h2>
-        <p>Suosittelen lihaa</p>
+      <h2></h2>
+        <p></p>
     </div>
     </div>
   </div>
