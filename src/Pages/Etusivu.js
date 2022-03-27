@@ -97,12 +97,13 @@ function App() {
       />
       </div>
       <div class="col-lg-5 col-sm-4 right" id="oikea">
-               <h5 className="oikea">Sosiaaliset</h5>
+               <h5 className="oikea">Löydät meidät myös somesta!</h5>
 
         <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste atque ea quis
-          molestias. Fugiat pariatur maxime quis culpa corporis vitae repudiandae
-          aliquam voluptatem veniam, est atque cumque eum delectus sint!
+        <a href="#" class="fa fa-facebook"></a>
+        <a href="#" class="fa fa-twitter"></a>
+        <a href='#' class="fa fa-instagram"></a>
+        <a href='#' class="fa fa-snapchat-ghost"></a>
         </p>
       </div>
     </div>
