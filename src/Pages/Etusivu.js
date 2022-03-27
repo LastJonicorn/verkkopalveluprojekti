@@ -74,7 +74,46 @@ function App() {
     </div>
     </div>
   </div>
-  <footer>THIS IS FOOTER</footer>
+  <footer className="info">
+  <div className="container p-6">
+    <div className="row">
+      <div className="col-lg-6 col-md-12 mb-4 mb-md-0">
+        <h5 className="text">Footer text</h5>
+
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste atque ea quis
+          molestias. Fugiat pariatur maxime quis culpa corporis vitae repudiandae
+          aliquam voluptatem veniam, est atque cumque eum delectus sint!
+        </p>
+      </div>
+
+      <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+         <h5 className="text-uppercase">Footer text</h5>
+
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste atque ea quis
+          molestias. Fugiat pariatur maxime quis culpa corporis vitae repudiandae
+          aliquam voluptatem veniam, est atque cumque eum delectus sint!
+        </p>
+      </div>
+      <div className="col-lg-5 col-md-4 mb-4 mb-md-0">
+      <img 
+      src='../Kuvat/logo.png'
+      className='logo'
+      />
+      </div>
+      <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12">      
+       <h5 className="text-uppercase">Footer text</h5>
+
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste atque ea quis
+          molestias. Fugiat pariatur maxime quis culpa corporis vitae repudiandae
+          aliquam voluptatem veniam, est atque cumque eum delectus sint!
+        </p>
+      </div>
+    </div>
+  </div>
+  </footer>
   </div>
   );
 }
