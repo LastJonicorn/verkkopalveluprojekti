@@ -121,6 +121,7 @@ h1{
 footer{
   background-color: #cca7fc;
   height: 10em;
+  text-align: center;
 }
 
 @keyframes App-logo-spin {
