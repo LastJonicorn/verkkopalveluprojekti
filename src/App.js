@@ -13,7 +13,7 @@ function App() {
   return (
     <div className="App" >
      <div className='kauppaid'>
-      <h2 >LAUTAPELIKAUPPA</h2>
+      <h2>LAUTAPELIKAUPPA</h2>
       <h1>WELEHO</h1>
       </div>
 
@@ -22,7 +22,7 @@ function App() {
   <Nav />
   <Routes>
     <Route path="/" element={Etusivu}/>
-    <Route path="/kysymykset" element={faq}/>
+    <Route path="./Pages/kysymykset" element={faq}/>
   </Routes>
 </Router>
 
