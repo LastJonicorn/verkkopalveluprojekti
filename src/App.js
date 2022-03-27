@@ -15,12 +15,13 @@ function App() {
     <div className='kauppaid'>
 
       <h1>
-        LAUTAPELIKAUPPA <br/> 
-        WELEHO      
+        LAUTAPELIKAUPPA<br/> 
+        <p className='weleho'>WELEHO
         <img 
           src='../Kuvat/Koriste2.png'
           className='logo'
         />
+        </p>      
       </h1>
     </div>
 
