@@ -11,10 +11,22 @@ function App() {
   
   return (
     <div className="App" >
-     <div className='kauppaid'>
+
+    <div className='kauppaid'>
+
       <h2>LAUTAPELIKAUPPA</h2>
-      <h1>WELEHO</h1>
-      </div>
+      <h1>
+        <img 
+          src='../Kuvat/logo.png'
+          className='logo'
+        />
+        WELEHO      
+        <img 
+          src='../Kuvat/logo.png'
+          className='logo'
+        />
+      </h1>
+    </div>
 
 {/*Navbar alkaa tästä*/}
   <Nav />
