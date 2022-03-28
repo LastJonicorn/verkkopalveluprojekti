@@ -1,5 +1,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@700&family=Mukta:wght@500&display=swap');
 
 
 
@@ -38,8 +39,6 @@ max-width: 100%;
 }
 
 .kauppaid{
-  font-family: 'Josefin Slab', serif;
-  
   padding-top: 20px;
 }
 
@@ -51,7 +50,14 @@ h2{
   padding: 1.3em;
 }
 
+.lautapelikauppa{
+  font-size: 30px;
+  letter-spacing: .2rem;
+  font-family: 'Mukta', sans-serif;
+}
+
 .weleho{
+  font-family: 'Josefin Slab', serif;
   font-size: 2.2em;
 }
 

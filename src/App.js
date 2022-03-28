@@ -13,9 +13,9 @@ function App() {
     <div className="App" >
 
     <div className='kauppaid'>
-
-      <h1>
-        LAUTAPELIKAUPPA<br/> 
+    
+      <h1 > <span className='lautapelikauppa'>LAUTAPELIKAUPPA<br/></span>
+        
         <p className='weleho'>WELEH
         <img 
           src='../Kuvat/Koriste2.png'
