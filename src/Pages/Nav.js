@@ -16,12 +16,12 @@ function App() {
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <Link class="nav-link active" aria-current="page" to="/">Home</Link>
+          <Link class="nav-link active" id="link" aria-current="page" to="/">Home</Link>
         </li>
         <li class="nav-item">
-          <Link class="nav-link" to="/kysymykset">FAQ</Link>
+          <Link class="nav-link" id="link" to="/kysymykset">FAQ</Link>
         </li>
-        <li class="nav-item dropdown">
+        <li class="nav-item dropdown" id="link">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Dropdown
           </a>
@@ -33,7 +33,7 @@ function App() {
           </ul>
         </li>
         <li class="nav-item">
-          <a class="nav-link disabled">Disabled</a>
+          <a class="nav-link disabled" id="link">Disabled</a>
         </li>
       </ul>
     </div>
