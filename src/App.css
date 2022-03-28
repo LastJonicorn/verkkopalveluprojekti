@@ -4,12 +4,16 @@
 
 
 .App {
-  text-align: center;
-  background-color: #f8f1ff;
-  max-width: 100%;
+text-align: center;
+background-image: url("../public/Kuvat/Tausta2.png");  
+background-position: center;
+background-size:cover;
+max-width: 100%;
 }
 
-
+.dropdown-menu.show{
+  margin-left: 10em;
+}
 
 .App-logo {
   height: 40vmin;
