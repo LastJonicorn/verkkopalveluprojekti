@@ -7,8 +7,11 @@ const URL = '';
 
 function App() {
   
-  return (
-    <Nav />
+  return (    
+    <div>
+      <Nav />
+      <h1>JOUJOU</h1>
+    </div>
   );
 }
 

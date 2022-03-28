@@ -1,9 +1,11 @@
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.css';
 import Carousel from 'react-bootstrap/Carousel';
-import { BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 import Nav from './Pages/Nav';
+import footer from './Pages/footer';
 import Etusivu from './Pages/Etusivu';
+import FAQ from './Pages/kysymykset';
+import {Route, Routes} from 'react-router';
 
 const URL = '';
 
@@ -27,9 +29,15 @@ function App() {
 
 {/*Navbar alkaa tästä*/}
   <Nav />
-{/*Grid Layout alkaa tästä*/}
+  <div>
+    <Routes>
+      <Route path='/kysymykset' element={<FAQ/>}/>
+      <Route path='/' element={<Etusivu/>}/>
 
-<Etusivu />
+    </Routes>
+  </div>
+{/*Grid Layout alkaa tästä*/}
+<footer />
   </div>
   );
 }
