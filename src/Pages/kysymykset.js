@@ -10,7 +10,36 @@ function App() {
   return (    
     <div>
       <Nav />
-      <h1>JOUJOU</h1>
+      <div class="container">
+      <div class="row">
+        <div class="col-6">      
+          <h3>Voinko toivoa tiettyä peliä valikoimiinne?</h3>
+          <p>
+            Kyllä. Voit lähettää meille sähköpostia otsikolla "pelitoive" ja toivoa haluamaasi peliä valikoimiimme. <br/>
+            Jos saamme tarpeeksi toiveita tietyistä peleistä niin lisäämme ne varmasti valikoimaan tulevaisuudessa.
+          </p>
+
+          <h3>Tuotteeni on aina loppu? Miksi?</h3>
+          <p>
+            Varastomme ovat ikävä kyllä rajalliset ja osa tuotteistamme on selvästi toivotumpia kuin toiset.
+            Halutessasi voit jättää tuotteen kohdalle sähköpostisi ja ilmoitamme sinulle, kun tuote on taas tilattavissa.
+          </p>
+      </div>
+        <div class="col-6">     
+        <h3>Voinko toivoa tiettyä peliä valikoimiinne?</h3>
+          <p>
+            Kyllä. Voit lähettää meille sähköpostia otsikolla "pelitoive" ja toivoa haluamaasi peliä valikoimiimme. <br/>
+            Jos saamme tarpeeksi toiveita tietyistä peleistä niin lisäämme ne varmasti valikoimaan tulevaisuudessa.
+          </p>
+
+          <h3>Tuotteeni on aina loppu? Miksi?</h3>
+          <p>
+            Varastomme ovat ikävä kyllä rajalliset ja osa tuotteistamme on selvästi toivotumpia kuin toiset.
+            Halutessasi voit jättää tuotteen kohdalle sähköpostisi ja ilmoitamme sinulle, kun tuote on taas tilattavissa.
+          </p>
+        </div>
+      </div>
+    </div>
     </div>
   );
 }
