@@ -133,6 +133,11 @@ h1{
 .suosittelut:hover{
   box-shadow: 0px 0px 15px rgb(121, 23, 80);
 }
+
+.kysymys{
+  padding: 1em;
+}
+
 footer{
   background-color: #cca7fc;
   text-align: center;
