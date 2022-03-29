@@ -2,7 +2,7 @@ import './App.css';
 import 'bootstrap/dist/css/bootstrap.css';
 import Carousel from 'react-bootstrap/Carousel';
 import Nav from './Pages/Nav';
-import footer from './Pages/footer';
+import Footer from './Pages/footer';
 import Etusivu from './Pages/Etusivu';
 import FAQ from './Pages/kysymykset';
 import {Route, Routes} from 'react-router';
@@ -37,7 +37,7 @@ function App() {
     </Routes>
   </div>
 {/*Grid Layout alkaa tästä*/}
-<footer />
+<Footer />
   </div>
   );
 }
