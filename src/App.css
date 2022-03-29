@@ -132,7 +132,6 @@ h1{
 footer{
   background-color: #cca7fc;
   text-align: center;
-  padding-bottom: 10%;
 }
 .alalogo{
   height: 160px;
@@ -140,8 +139,8 @@ footer{
   padding-left: 50%
 }
 #oikea{
-  padding-left: 20%;
-  padding-right: 0%;
+  padding-left: 10%;
+  padding-right: 10%;
 }
 
 .fa {
