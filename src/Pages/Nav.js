@@ -26,7 +26,7 @@ function App() {
             Dropdown
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" href="#">Action</a></li>
+            <Link class="nav-lautapelit" id="link" to="/Lautapelit">Lautapelit</Link>
             <li><a class="dropdown-item" href="#">Another action</a></li>
             <li><a class="dropdown-divider"/></li>
             <li><a class="dropdown-item" href="#">Something else here</a></li>
