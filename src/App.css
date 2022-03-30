@@ -16,9 +16,8 @@ max-width: 100%;
   margin-left: 9em;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.navbar-brand {
+  padding-left: 2em;  
 }
 
 #Ostoskori{
@@ -91,6 +90,9 @@ h1{
   padding: 2em;
 }
 
+.container{
+  padding-bottom: 2em;
+}
 /* Weleho-logo */
 
 .logo {

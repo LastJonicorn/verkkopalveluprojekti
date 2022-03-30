@@ -17,10 +17,12 @@ function App() {
                 <p>Tuotteesi</p>
                 <div id='OstoskoriTuote'>
                     <img src='../Kuvat/pic332870.jpg'/>
+                    <p>Tuote: Talisman</p>
                     <p>Hinta: 45€</p>
                     <p>Tuotenumero: 123456789</p>
 
                     <img src='../Kuvat/pic332870.jpg'/>
+                    <p>Tuote: Talisman</p>
                     <p>Hinta: 45€</p>
                     <p>Tuotenumero: 123456789</p>
                 </div>
