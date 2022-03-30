@@ -33,7 +33,7 @@ function App() {
           </ul>
         </li>
         <li class="nav-item">
-          <a class="nav-link disabled" id="Ostoskori"><img src='../Kuvat/ShoppingCart.png'/></a>
+          <Link class="nav-link" id="Ostoskori" to="/Ostoskori"><img src='../Kuvat/ShoppingCart.png'/></Link>
         </li>
       </ul>
     </div>

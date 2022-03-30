@@ -5,6 +5,7 @@ import Nav from './Pages/Nav';
 import Footer from './Pages/footer';
 import Etusivu from './Pages/Etusivu';
 import FAQ from './Pages/kysymykset';
+import Ostoskori from './Pages/Ostoskori';
 import {Route, Routes} from 'react-router';
 
 const URL = '';
@@ -33,7 +34,7 @@ function App() {
     <Routes>
       <Route path='/kysymykset' element={<FAQ/>}/>
       <Route path='/' element={<Etusivu/>}/>
-
+      <Route path='/Ostoskori' element={<Ostoskori/>}/>
     </Routes>
   </div>
 {/*Grid Layout alkaa tästä*/}
