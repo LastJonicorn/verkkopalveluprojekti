@@ -26,10 +26,10 @@ function App() {
             Dropdown
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <Link class="nav-lautapelit" id="link" to="/Lautapelit">Lautapelit</Link>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><a class="dropdown-item" href="/Lautapelit">Lautapelit</a></li>
+            <li><a class="dropdown-item" href="#">Korttipelit</a></li>
             <li><a class="dropdown-divider"/></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
+            <li><a class="dropdown-item" href="#">Jotain muuta</a></li>
           </ul>
         </li>
         <li class="nav-item">
