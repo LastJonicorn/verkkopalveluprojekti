@@ -183,6 +183,15 @@ footer{
   background: #fffb1cda;
   color: white;
 }
+#OstoskoriTuote{
+  padding-top: 2em;
+  padding-bottom: 2em;
+  border: 5px solid black;
+  border-radius: 15px;
+}
+#OstoskoriTuote img{
+  width: 6em;
+}
 
 @keyframes App-logo-spin {
   from {
