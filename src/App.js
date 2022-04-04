@@ -1,3 +1,4 @@
+import React from 'react';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.css';
 import Carousel from 'react-bootstrap/Carousel';
@@ -7,6 +8,7 @@ import Etusivu from './Pages/Etusivu';
 import FAQ from './Pages/kysymykset';
 import Ostoskori from './Pages/Ostoskori';
 import {Route, Routes} from 'react-router';
+
 
 const URL = '';
 
