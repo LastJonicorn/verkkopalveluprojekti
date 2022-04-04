@@ -8,7 +8,7 @@ import FAQ from './Pages/kysymykset';
 import Ostoskori from './Pages/Ostoskori';
 import {Route, Routes} from 'react-router';
 
-const URL = '';
+const URL = 'http://localhost/verkkokauppaprojekti-backend/';
 
 function App() {
   
