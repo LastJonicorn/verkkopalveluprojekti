@@ -55,10 +55,27 @@ function App() {
     </Carousel.Caption>
   </Carousel.Item>
 </Carousel>
-<br></br>
-<p>
-  Tuleeko tähän vielä jokin oma juttunsa? Kuukauden suosituimmat tuotteet? Alennukset?
-</p>
+<br/><br/>
+<div>
+  <p id='ale'>Alennetut hinnat!!!!</p>
+  <div id='alekuvat'>
+    <img
+      className="ale"
+      src="../Kuvat\pic3518231.jpg"
+      alt="Third slide"
+    />
+    <img
+    className="ale"
+    src="../Kuvat\pic3518231.jpg"
+    alt="Third slide"
+    />
+    <img
+    className="ale"
+    src="../Kuvat\pic3518231.jpg"
+    alt="Third slide"
+    />
+  </div>
+</div>
 </div>
 
 {/*Grid Layout toinen puoli alkaa tästä*/}
