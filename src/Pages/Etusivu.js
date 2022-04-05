@@ -111,9 +111,8 @@ function App() {
 <div class="container">
   <div class="row">
       <div class="col"></div>
-      <div class="col" id="blogi"> BLOGI </div>
       <div class="col" id="suosittelut"> SUOSITTELUT </div>
-
+      <div class="col" id="blogi"> BLOGI </div>
   </div>
 </div>
 

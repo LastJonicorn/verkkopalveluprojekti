@@ -75,9 +75,10 @@ h1{
   border-color: #F8F1FF;
   font-size: 30px;
   width: 15em;
-  margin-left: -300px;
+  margin-left: -200px;
   margin-top: 20%;
   border-width: 20px;
+  border-radius: 15px;
 }
 #sivukategoria{
   border-style: solid;
@@ -89,9 +90,10 @@ h1{
 }
 /* CAROUSEL */
 #carousel{
-  margin-left: 100px;
+  margin-left: 120px;
   border-style: solid;
   border-color: #F8F1FF;
+  border-radius: 15px;
   border-width: 20px;
   margin-top: 3%;
   padding-top: 60px;
@@ -100,8 +102,7 @@ h1{
   margin: auto;
   height: 480px;
   align-items: center;
-  padding-top: 3em;
- 
+  margin-top: 10%;
 }
 .carousel-caption h5{
   font-size: 1.5em;
@@ -116,9 +117,18 @@ h1{
 #aletuote{
   border-style: solid;
   color: #F8F1FF;
-  margin-left: 90px;
+  margin-left: 10px;
   border-width: 20px;
   background-color: #F8F1FF;
+  border-radius: 15px;
+  margin-top: 40px;
+}
+.ale{
+  width: 10em;
+  margin-left: 20%;
+}
+#alekuva{
+  height: 10em;
 }
 
 .col-4{
@@ -147,14 +157,17 @@ h1{
   background-image: url("../public/Kuvat/blogi.jpg");
   background-position: center;
   background-size:cover;
-  border: 5px solid black;
+  border: 5px solid rgb(255, 255, 255);
   border-radius: 15px;
+  border-width: 10px;
   height: 15em;
   width: 150px;
   font-size: 1.5em;
   margin-top: 40px;
-  margin-left: -150px;
-  margin-right: 20%;
+  margin-left: -40px;
+  color: #F8F1FF;
+  text-align:justify;
+  width: 3em;
 }
 #blogi:hover{
   box-shadow: 0px 0px 15px rgb(121, 23, 80);
@@ -165,26 +178,18 @@ h1{
   background-image: url("../public/Kuvat/Suosittelut1.png");
   background-position: center;
   background-size:contain;
-  margin-top: 1em;
   height: 15em;
-  border: 5px solid black;
+  border: 5px solid rgb(255, 255, 255);
   border-radius: 15px;
+  border-width: 10px;
   font-size: 1.5em;
   margin-top: 40px;
-  margin-left: -70px;
-  margin-right: 10%;
+  margin-right: 20%;
+  color: #F8F1FF;
+  text-align:justify;
 }
 #suosittelut:hover{
   box-shadow: 0px 0px 15px rgb(121, 23, 80);
-}
-
-.ale{
-  width: 10em;
-  margin-left: 2em;
-  margin-top: 20%;
-}
-#alekuva{
-  height: 10em;
 }
 
 /* FAQ */
