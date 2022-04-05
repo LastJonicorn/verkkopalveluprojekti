@@ -97,6 +97,7 @@ h1{
   border-width: 20px;
   margin-top: 3%;
   padding-top: 60px;
+  background-color: #36313857;
 }
 .carousel img{
   margin: auto;
@@ -157,6 +158,7 @@ h1{
   background-image: url("../public/Kuvat/blogi.jpg");
   background-position: center;
   background-size:cover;
+  background-repeat: no-repeat;
   border: 5px solid rgb(255, 255, 255);
   border-radius: 15px;
   border-width: 10px;
@@ -178,6 +180,7 @@ h1{
   background-image: url("../public/Kuvat/Suosittelut1.png");
   background-position: center;
   background-size:contain;
+  background-repeat: no-repeat;
   height: 15em;
   border: 5px solid rgb(255, 255, 255);
   border-radius: 15px;
