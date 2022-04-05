@@ -141,17 +141,25 @@ h1{
   margin-left: 2em;
 }
 
+/* FAQ */
 .kysymys{
   padding: 1em;
 }
 
-.accordion-body, .accordion-header, button.accordion-button{
-  background-color: #656176;
-  color: #F8F1FF;
+.accordion-body, .accordion-header, button.accordion-button, button.accordion-button.collapsed{
+  color: #656176;
+  background-color: #F8F1FF;
   font-family:'Mukta', sans-serif;
   font-size: 20PX;
 }
+.accordion-header:hover{
+  background-color: #bf91fc;
+}
+.accordion-header{
+  padding: 20px;
+}
 
+/* FOOTER */ 
 footer{
   background-color: #cca7fc;
   text-align: center;
