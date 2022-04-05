@@ -145,6 +145,13 @@ h1{
   padding: 1em;
 }
 
+.accordion-body, .accordion-header, button.accordion-button{
+  background-color: #656176;
+  color: #F8F1FF;
+  font-family:'Mukta', sans-serif;
+  font-size: 20PX;
+}
+
 footer{
   background-color: #cca7fc;
   text-align: center;
