@@ -30,6 +30,8 @@ function App() {
       </h1>
     </div>
 
+    
+
 {/*Navbar alkaa tästä*/}
   <Nav />
   <div>
@@ -39,6 +41,7 @@ function App() {
       <Route path='/Ostoskori' element={<Ostoskori/>}/>
     </Routes>
   </div>
+  
 {/*Grid Layout alkaa tästä*/}
 <Footer />
   </div>

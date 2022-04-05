@@ -24,7 +24,7 @@ function App() {
         </li>
         <li class="nav-item dropdown" id="link">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Dropdown
+            Kategoriat
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
             <li><a class="dropdown-item" href="/Lautapelit">Lautapelit</a></li>
@@ -40,6 +40,8 @@ function App() {
     </div>
   </div>
 </nav>
+
+
     
   );
 }

@@ -69,21 +69,56 @@ h1{
   font-size: 30%;
 }
 
+/* SIDEBAR */
+#sidebar{
+  border-style: solid;
+  border-color: #F8F1FF;
+  font-size: 30px;
+  width: 15em;
+  margin-left: -300px;
+  margin-top: 20%;
+  border-width: 20px;
+}
+#sivukategoria{
+  border-style: solid;
+  border-color: #F8F1FF;
+  background-color: #F8F1FF;
+}
+#kategoriaTxt{
+  color:#363138
+}
+/* CAROUSEL */
+#carousel{
+  margin-left: 100px;
+  border-style: solid;
+  border-color: #F8F1FF;
+  border-width: 20px;
+  margin-top: 3%;
+  padding-top: 60px;
+}
 .carousel img{
   margin: auto;
   height: 480px;
   align-items: center;
   padding-top: 3em;
+ 
 }
-
 .carousel-caption h5{
   font-size: 1.5em;
   color: white;
 }
-
 .carousel-caption p{
   font-size: 1.5em;
   color: rgb(255, 163, 163);
+}
+/* ALE */
+
+#aletuote{
+  border-style: solid;
+  color: #F8F1FF;
+  margin-left: 90px;
+  border-width: 20px;
+  background-color: #F8F1FF;
 }
 
 .col-4{
@@ -107,38 +142,49 @@ h1{
   padding-bottom: 25px;
 }
 
-.blogi{
+/* BLOGI */
+#blogi{
   background-image: url("../public/Kuvat/blogi.jpg");
   background-position: center;
   background-size:cover;
   border: 5px solid black;
-  height: 13em;
-  width: 15em;
   border-radius: 15px;
+  height: 15em;
+  width: 150px;
   font-size: 1.5em;
+  margin-top: 40px;
+  margin-left: -150px;
+  margin-right: 20%;
 }
-.blogi:hover{
+#blogi:hover{
   box-shadow: 0px 0px 15px rgb(121, 23, 80);
 }
 
-.suosittelut{
+/* SUOSITTELUT */
+#suosittelut{
   background-image: url("../public/Kuvat/Suosittelut1.png");
   background-position: center;
   background-size:contain;
   margin-top: 1em;
   height: 15em;
-  width: 15em;
   border: 5px solid black;
   border-radius: 15px;
   font-size: 1.5em;
+  margin-top: 40px;
+  margin-left: -70px;
+  margin-right: 10%;
 }
-.suosittelut:hover{
+#suosittelut:hover{
   box-shadow: 0px 0px 15px rgb(121, 23, 80);
 }
 
 .ale{
   width: 10em;
   margin-left: 2em;
+  margin-top: 20%;
+}
+#alekuva{
+  height: 10em;
 }
 
 /* FAQ */
@@ -182,7 +228,7 @@ footer{
   text-align:inherit;
   text-decoration: none;
   border-radius: 50%;
-  padding:5%;
+  padding: 4%;
 }
 .fa:hover {
   opacity: 0.7;
@@ -198,7 +244,7 @@ footer{
   color: white;
 }
 .fa-instagram {
-  background: #125688;
+  background: #f001947c;
   color: white;
 }
 .fa-snapchat-ghost {

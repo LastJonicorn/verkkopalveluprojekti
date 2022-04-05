@@ -30,6 +30,7 @@ function App() {
       className='alalogo'
       />
       </div>
+      {/* pitää muuttaa tätä leveyttä */}
       <div class="col-lg-5 col-sm-4 right" id="oikea">
                <h5 className="oikea">Löydät meidät myös somesta!</h5>
 
