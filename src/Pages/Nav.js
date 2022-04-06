@@ -29,8 +29,11 @@ function App() {
           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
             <li><a class="dropdown-item" href="/Lautapelit">Lautapelit</a></li>
             <li><a class="dropdown-item" href="/Korttipelit">Korttipelit</a></li>
-            <li><a class="dropdown-divider"/></li>
-            <li><a class="dropdown-item" href="#">Jotain muuta</a></li>
+            <li><a class="dropdown-item" href="#">Strategiapelit</a></li>
+            <li><a class="dropdown-item" href="#">Koko perheelle</a></li>
+            <li><a class="dropdown-item" href="#">Roolipelit</a></li>
+            <li><a class="dropdown-item" href="#">Nopat</a></li>
+            <li><a class="dropdown-item" href="#">Miniatyyrit</a></li>
           </ul>
         </li>
         <li class="nav-item">
