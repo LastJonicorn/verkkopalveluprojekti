@@ -217,6 +217,7 @@ h1{
 footer{
   background-color: #cca7fc;
   text-align: center;
+  overflow: hidden;
 }
 .alalogo{
   height: 160px;
