@@ -7,6 +7,7 @@ import Footer from './Pages/footer';
 import Etusivu from './Pages/Etusivu';
 import FAQ from './Pages/kysymykset';
 import Ostoskori from './Pages/Ostoskori';
+import Lautapelit from './Pages/Lautapelit';
 import {Route, Routes} from 'react-router';
 
 
@@ -39,6 +40,8 @@ function App() {
       <Route path='/kysymykset' element={<FAQ/>}/>
       <Route path='/' element={<Etusivu/>}/>
       <Route path='/Ostoskori' element={<Ostoskori/>}/>
+      <Route path='/Lautapelit' element={<Lautapelit/>}/>
+
     </Routes>
   </div>
   
