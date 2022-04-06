@@ -20,10 +20,10 @@ function App() {
         {/* SIDEBAR */}
         <ul class="nav flex-column" id="sidebar">
           <li class="nav-item" id="sivukategoria">
-            <a class="nav-link"  id="kategoriaTxt" href="#">Lautapelit</a>
+            <a class="nav-link"  id="kategoriaTxt" href="/Lautapelit">Lautapelit</a>
           </li>
           <li class="nav-item"  id="sivukategoria">
-            <a class="nav-link"  id="kategoriaTxt" href="#">Korttipelit</a>
+            <a class="nav-link"  id="kategoriaTxt" href="/Korttipelit">Korttipelit</a>
           </li>
           <li class="nav-item"  id="sivukategoria">
             <a class="nav-link"  id="kategoriaTxt" href="#">Strategiapelit</a>
