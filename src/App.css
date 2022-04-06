@@ -163,7 +163,7 @@ h1{
   border-radius: 15px;
   border-width: 10px;
   height: 15em;
-  width: 150px;
+  width: 100px;
   font-size: 1.5em;
   margin-top: 40px;
   margin-left: -40px;
@@ -182,19 +182,37 @@ h1{
   background-size:contain;
   background-repeat: no-repeat;
   height: 15em;
+  width: 100%;
   border: 5px solid rgb(255, 255, 255);
   border-radius: 15px;
   border-width: 10px;
   font-size: 1.5em;
   margin-top: 40px;
-  margin-right: 20%;
   color: #F8F1FF;
   text-align:justify;
 }
 #suosittelut:hover{
   box-shadow: 0px 0px 15px rgb(121, 23, 80);
 }
-
+#feedback{
+  background-image: url("../public/Kuvat/mailbox-1819966_960_720.jpg");
+  background-position: center;
+  background-size:cover;
+  background-repeat: no-repeat;
+  border: 5px solid rgb(255, 255, 255);
+  border-radius: 15px;
+  border-width: 10px;
+  height: 15em;
+  width: 100px;
+  font-size: 1.5em;
+  margin-top: 40px;
+  color: #F8F1FF;
+  text-align:justify;
+  width: 3em;
+}
+#feedback:hover{
+  box-shadow: 0px 0px 15px rgb(121, 23, 80);
+}
 /* FAQ */
 .kysymys{
   padding: 1em;
