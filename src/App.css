@@ -73,17 +73,22 @@ h1{
 #sidebar{
   border-style: solid;
   border-color: #F8F1FF;
-  font-size: 30px;
+  background-color: #F8F1FF;
+  font-size: 25px;
   width: 15em;
-  margin-left: -200px;
+  margin-left: -80px;
   margin-top: 20%;
   border-width: 20px;
   border-radius: 15px;
+  height: 95%;
 }
 #sivukategoria{
   border-style: solid;
   border-color: #F8F1FF;
   background-color: #F8F1FF;
+  height: 14%;
+  text-decoration: solid #363138 underline;
+
 }
 #kategoriaTxt{
   color:#363138
@@ -166,7 +171,6 @@ h1{
   width: 100px;
   font-size: 1.5em;
   margin-top: 40px;
-  margin-left: -40px;
   color: #F8F1FF;
   text-align:justify;
   width: 3em;
@@ -179,15 +183,15 @@ h1{
 #suosittelut{
   background-image: url("../public/Kuvat/Suosittelut1.png");
   background-position: center;
-  background-size:contain;
+  background-size:cover;
   background-repeat: no-repeat;
   height: 15em;
-  width: 100%;
   border: 5px solid rgb(255, 255, 255);
   border-radius: 15px;
   border-width: 10px;
   font-size: 1.5em;
   margin-top: 40px;
+  margin-right:20px;
   color: #F8F1FF;
   text-align:justify;
 }
@@ -206,6 +210,7 @@ h1{
   width: 100px;
   font-size: 1.5em;
   margin-top: 40px;
+  margin-right:20px;
   color: #F8F1FF;
   text-align:justify;
   width: 3em;
