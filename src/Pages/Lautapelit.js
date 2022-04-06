@@ -19,7 +19,7 @@ function App() {
     <div class="card">
       <img src="..." class="card-img-top" alt="..."></img>
       <div class="card-body">
-        <h5 class="card-title">Card title</h5>
+        <h5 class="card-title">Lautapeli nro 1</h5>
         <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
       </div>
     </div>
@@ -28,7 +28,7 @@ function App() {
     <div class="card">
       <img src="..." class="card-img-top" alt="..."></img>
       <div class="card-body">
-        <h5 class="card-title">Card title</h5>
+        <h5 class="card-title">Lautapeli nro 2</h5>
         <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
       </div>
     </div>
@@ -37,7 +37,7 @@ function App() {
     <div class="card">
       <img src="..." class="card-img-top" alt="..."></img>
       <div class="card-body">
-        <h5 class="card-title">Card title</h5>
+        <h5 class="card-title">Lautapeli nro 3</h5>
         <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
       </div>
     </div>
@@ -46,7 +46,7 @@ function App() {
     <div class="card">
       <img src="..." class="card-img-top" alt="..."></img>
       <div class="card-body">
-        <h5 class="card-title">Card title</h5>
+        <h5 class="card-title">Lautapeli nro 4</h5>
         <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
       </div>
     </div>
