@@ -166,7 +166,6 @@ h1{
   width: 100px;
   font-size: 1.5em;
   margin-top: 40px;
-  margin-left: -40px;
   color: #F8F1FF;
   text-align:justify;
   width: 3em;
@@ -188,6 +187,7 @@ h1{
   border-width: 10px;
   font-size: 1.5em;
   margin-top: 40px;
+  margin-right:20px;
   color: #F8F1FF;
   text-align:justify;
 }
@@ -206,6 +206,7 @@ h1{
   width: 100px;
   font-size: 1.5em;
   margin-top: 40px;
+  margin-right:20px;
   color: #F8F1FF;
   text-align:justify;
   width: 3em;
