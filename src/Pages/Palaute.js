@@ -5,7 +5,14 @@ import Navbar from 'react-bootstrap/Navbar';
 import {Container, Nav, NavDropdown, Form, FormControl, Button} from 'react-bootstrap';
 
 function App() {
-    return
+    return(
+        <div>
+            
+        </div>
+        
+    )
 
     
-};
+}
+
+export default App;
