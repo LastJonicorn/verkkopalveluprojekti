@@ -1,0 +1,8 @@
+.App {
+    text-align: center;
+    background-image: url("../public/Kuvat/Tausta2.png");  
+    background-position: center;
+    background-size:cover;
+    max-width: 100%;
+}
+

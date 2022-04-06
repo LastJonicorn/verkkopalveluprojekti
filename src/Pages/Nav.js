@@ -27,8 +27,8 @@ function App() {
             Kategoriat
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" href="/Lautapelit">Lautapelit</a></li>
-            <li><a class="dropdown-item" href="/Korttipelit">Korttipelit</a></li>
+            <Link class="dropdown-item" to="/Lautapelit">Lautapelit</Link>
+            <Link class="dropdown-item" to="/Korttipelit">Korttipelit</Link>
             <li><a class="dropdown-item" href="#">Strategiapelit</a></li>
             <li><a class="dropdown-item" href="#">Koko perheelle</a></li>
             <li><a class="dropdown-item" href="#">Roolipelit</a></li>
