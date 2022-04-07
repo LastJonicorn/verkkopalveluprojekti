@@ -10,8 +10,7 @@ import Ostoskori from './Pages/Ostoskori';
 import Lautapelit from './Pages/Lautapelit';
 import {Route, Routes} from 'react-router';
 
-
-const URL = '';
+const url = '';
 
 function App() {
   
@@ -40,7 +39,7 @@ function App() {
       <Route path='/kysymykset' element={<FAQ/>}/>
       <Route path='/' element={<Etusivu/>}/>
       <Route path='/Ostoskori' element={<Ostoskori/>}/>
-      <Route path='/Lautapelit' element={<Lautapelit/>}/>
+      <Route path='/products' element={<Lautapelit/>}/>
 
     </Routes>
   </div>

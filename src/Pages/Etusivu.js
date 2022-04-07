@@ -3,7 +3,7 @@ import '../App.css';
 import 'bootstrap/dist/css/bootstrap.css';
 import Carousel from 'react-bootstrap/Carousel';
 
-const URL = 'http://localhost:8888/verkkokauppaprojekti-backend/';
+const url = 'http://localhost/verkkokauppaprojekti-backend/';
 
 function App() {
   

@@ -1,11 +1,12 @@
 import React, { createFactory } from 'react';
 import '../App.css';
 import 'bootstrap/dist/css/bootstrap.css';
-import Navbar from 'react-bootstrap/Navbar';
-import {Container, Nav, NavDropdown, Form, FormControl, Button} from 'react-bootstrap';
 import {Link} from 'react-router-dom';
 import {useState, useEffect} from 'react';
 import axios from 'axios';
+
+const url = 'http://localhost/verkkokauppaprojekti-backend/';
+
 
 export default function Navi({url}) {
   const [categories, setCategories] = useState([]);
@@ -16,6 +17,7 @@ export default function Navi({url}) {
           .then((response) => {
             const json = response.data;
             setCategories(json);
+            //console.log(json);
         }).catch (error => {
           alert(error.response === undefined ?  error : error.response.data.error);
         })
@@ -43,13 +45,13 @@ export default function Navi({url}) {
             Kategoriat
           </a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-              {categories.map (categories => (
-                <li key={categories.tuoteryhmanro}>
+              {categories.map (tuoteryhma => (
+                <li key={tuoteryhma.tuoteryhmanro}>
                   {<Link
                     className='dropdown-item'
                     to={'/products/' + tuoteryhma.tuoteryhmanro} > {tuoteryhma.tuoteryhmanimi}
                   </Link>}
-                    </li>
+                </li>
               ))}
           </ul>
         </li>
