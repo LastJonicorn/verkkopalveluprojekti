@@ -4,14 +4,19 @@ import 'bootstrap/dist/css/bootstrap.css';
 import Navbar from 'react-bootstrap/Navbar';
 import {Container, Nav, NavDropdown, Form, FormControl, Button} from 'react-bootstrap';
 import {Link} from 'react-router-dom';
-import React, {useState, useEffect} from 'react';
+import {useState, useEffect} from 'react';
 import axios from 'axios';
 
 function App() {
 
     useEffect(() => {
-    
-  
+        axios.get(url + 'products/getcategories.php')
+          .then((response) => {
+            const json = response.data;
+            setCategories(json);
+        }).catch (error => {
+          alert(error.response === undefined ?  error : error.response.data.error);
+        })
     }, [])
     
 
