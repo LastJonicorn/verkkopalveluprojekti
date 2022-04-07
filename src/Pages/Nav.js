@@ -1,11 +1,20 @@
-import React from 'react';
+import React, { createFactory } from 'react';
 import '../App.css';
 import 'bootstrap/dist/css/bootstrap.css';
 import Navbar from 'react-bootstrap/Navbar';
 import {Container, Nav, NavDropdown, Form, FormControl, Button} from 'react-bootstrap';
 import {Link} from 'react-router-dom';
+import React, {useState, useEffect} from 'react';
+import axios from 'axios';
 
 function App() {
+
+    useEffect(() => {
+    
+  
+    }, [])
+    
+
   
   return (
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -26,18 +35,19 @@ function App() {
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Kategoriat
           </a>
-          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <Link class="dropdown-item" to="/Lautapelit">Lautapelit</Link>
-            <Link class="dropdown-item" to="/Korttipelit">Korttipelit</Link>
-            <li><a class="dropdown-item" href="#">Strategiapelit</a></li>
-            <li><a class="dropdown-item" href="#">Koko perheelle</a></li>
-            <li><a class="dropdown-item" href="#">Roolipelit</a></li>
-            <li><a class="dropdown-item" href="#">Nopat</a></li>
-            <li><a class="dropdown-item" href="#">Miniatyyrit</a></li>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              {tuoteryhma.map (tuoteryhma => (
+                <li key={tuoteryhma.tuoteryhmanro}>
+                  {<Link
+                    className='dropdown-item'
+                    to={'/products/' + tuoteryhma.tuoteryhmanro} > {tuoteryhma.tuoteryhmanimi}
+                    </Link>}
+                    </li>
+              ))}
           </ul>
         </li>
-        <li class="nav-item">
-          <Link class="nav-link" id="Ostoskori" to="/Ostoskori"><img src='../Kuvat/ShoppingCart.png'/></Link>
+            <li class="nav-item">
+              <Link class="nav-link" id="Ostoskori" to="/Ostoskori"><img src='../Kuvat/ShoppingCart.png'/></Link>
         </li>
       </ul>
     </div>
