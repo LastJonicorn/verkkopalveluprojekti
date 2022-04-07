@@ -7,7 +7,9 @@ import {Link} from 'react-router-dom';
 import {useState, useEffect} from 'react';
 import axios from 'axios';
 
-function App() {
+export default function Navi({url}) {
+  const [categories, setCategories] = useState([]);
+
 
     useEffect(() => {
         axios.get(url + 'products/getcategories.php')
@@ -41,12 +43,12 @@ function App() {
             Kategoriat
           </a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-              {tuoteryhma.map (tuoteryhma => (
-                <li key={tuoteryhma.tuoteryhmanro}>
+              {categories.map (categories => (
+                <li key={categories.tuoteryhmanro}>
                   {<Link
                     className='dropdown-item'
                     to={'/products/' + tuoteryhma.tuoteryhmanro} > {tuoteryhma.tuoteryhmanimi}
-                    </Link>}
+                  </Link>}
                     </li>
               ))}
           </ul>
@@ -64,4 +66,3 @@ function App() {
   );
 }
 
-export default App;
