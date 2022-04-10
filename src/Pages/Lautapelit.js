@@ -1,13 +1,28 @@
-import React from 'react';
+import '../App.css';
+import React,{useState,useEffect} from 'react';
+import axios from 'axios';
 import '../Lautapelit.css';
 import 'bootstrap/dist/css/bootstrap.css';
 import Card from 'react-bootstrap/Card';
 
 
-const URL = '';
-
-function App() {
+export default function Products({url}) {
   
+  const [products, setProducts] = useState([]);
+
+  useEffect(() => {
+      axios.get(url + 'products/getproducts.php')
+        .then((response) => {
+          const json = response.data;
+          console.log(json);
+          setProducts(json);
+          console.log(json);
+      }).catch (error => {
+        alert(error.response === undefined ?  error : error.response.data.error);
+      })
+  }, [])
+  
+
   return (
     <div className="App">
   
@@ -59,5 +74,3 @@ function App() {
   );
   
 }
-
-export default App;
