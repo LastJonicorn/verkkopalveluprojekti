@@ -44,6 +44,13 @@ export default function Nav({url}) {
             Kategoriat
           </a>
             <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
+              {categories.map(tuoteryhma => (
+                <li key={tuoteryhma.tuoteryhmanro}>
+                  {<Link
+                    className='dropdown-item'
+                    to={'/products/' + tuoteryhma.tuoteryhmanro}>{tuoteryhma.tuoteryhmanimi}</Link>}
+                </li>
+              ))}
           </ul>
         </li>
             <li className="nav-item">
