@@ -4,16 +4,14 @@ import 'bootstrap/dist/css/bootstrap.css';
 import Navbar from 'react-bootstrap/Navbar';
 import {Container, Nav, NavDropdown, Form, FormControl, Button} from 'react-bootstrap';
 
-const URL = '';
-
 function App() {
   
   return (    
     <div>
       <Nav />
-      <div class="container">
-        <div class="row">
-            <div class="col-8">
+      <div className="container">
+        <div className="row">
+            <div className="col-8">
                 <h2>Ostoskori</h2>
                 <p>Tuotteesi</p>
                 <div id='OstoskoriTuote'>
@@ -29,7 +27,7 @@ function App() {
                 </div>
                 <p>Maksutavat</p>
             </div>
-            <div class="col-3">
+            <div className="col-3">
                 <h2>Yhteenveto</h2>
                 <p>Maksa</p>
             </div>

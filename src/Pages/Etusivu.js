@@ -18,27 +18,27 @@ function App() {
       <div className="col-2">
         
         {/* SIDEBAR */}
-        <ul class="nav flex-column" id="sidebar">
-          <li class="nav-item" id="sivukategoria">
-            <a class="nav-link"  id="kategoriaTxt" href="/Lautapelit">Lautapelit</a>
+        <ul className="nav flex-column" id="sidebar">
+          <li className="nav-item" id="sivukategoria">
+            <a className="nav-link"  id="kategoriaTxt" href="/Lautapelit">Lautapelit</a>
           </li>
-          <li class="nav-item"  id="sivukategoria">
-            <a class="nav-link"  id="kategoriaTxt" href="/Korttipelit">Korttipelit</a>
+          <li className="nav-item"  id="sivukategoria">
+            <a className="nav-link"  id="kategoriaTxt" href="/Korttipelit">Korttipelit</a>
           </li>
-          <li class="nav-item"  id="sivukategoria">
-            <a class="nav-link"  id="kategoriaTxt" href="#">Strategiapelit</a>
+          <li className="nav-item"  id="sivukategoria">
+            <a className="nav-link"  id="kategoriaTxt" href="#">Strategiapelit</a>
           </li>
-          <li class="nav-item"  id="sivukategoria">
-            <a class="nav-link"  id="kategoriaTxt" href="#">Koko perheelle</a>
+          <li className="nav-item"  id="sivukategoria">
+            <a className="nav-link"  id="kategoriaTxt" href="#">Koko perheelle</a>
           </li>
-          <li class="nav-item"  id="sivukategoria">
-            <a class="nav-link"  id="kategoriaTxt" href="#">Roolipelit</a>
+          <li className="nav-item"  id="sivukategoria">
+            <a className="nav-link"  id="kategoriaTxt" href="#">Roolipelit</a>
           </li>
-          <li class="nav-item"  id="sivukategoria">
-            <a class="nav-link"  id="kategoriaTxt" href="#">Nopat</a>
+          <li className="nav-item"  id="sivukategoria">
+            <a className="nav-link"  id="kategoriaTxt" href="#">Nopat</a>
           </li>
-          <li class="nav-item"  id="sivukategoria">
-            <a class="nav-link"  id="kategoriaTxt" href="#">Miniatyyrit</a>
+          <li className="nav-item"  id="sivukategoria">
+            <a className="nav-link"  id="kategoriaTxt" href="#">Miniatyyrit</a>
           </li>
         </ul>
     </div>
@@ -54,8 +54,8 @@ function App() {
           alt="First slide"
         />
         <Carousel.Caption>
-          <h5 class="pelinimi">Tässä peli nro 1</h5>
-          <p class="kuvaus">Vau mikä peli. Haluaisit varmasti ostaa tämän!</p>
+          <h5 className="pelinimi">Tässä peli nro 1</h5>
+          <p className="kuvaus">Vau mikä peli. Haluaisit varmasti ostaa tämän!</p>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
@@ -88,17 +88,17 @@ function App() {
 <br/><br/>
 
     <div className="col" id="ale">
-    <ul class="nav flex-column" id="ale" > 
-          <li class="nav-item" id="aletuote">
-            <a class="nav-link" href="#">aletuote</a>
+    <ul className="nav flex-column" id="ale" > 
+          <li className="nav-item" id="aletuote">
+            <a className="nav-link" href="#">aletuote</a>
             <img src="..\Kuvat\i25369691w800h465.jpg" id="alekuva"/>
           </li>
-          <li class="nav-item"  id="aletuote">
-            <a class="nav-link" href="#">aletuote</a>
+          <li className="nav-item"  id="aletuote">
+            <a className="nav-link" href="#">aletuote</a>
             <img src="../Kuvat/1782_1200x1200.jpg" id="alekuva"/>
           </li>
-          <li class="nav-item"  id="aletuote">
-            <a class="nav-link" href="#">aletuote</a>
+          <li className="nav-item"  id="aletuote">
+            <a className="nav-link" href="#">aletuote</a>
             <img src="../Kuvat/4015566033481xxl.jpg" id="alekuva"/>
           </li>
     </ul>
@@ -108,11 +108,11 @@ function App() {
 
 
 {/*Grid Layout alapuoli alkaa tästä*/}
-<div class="container">
-  <div class="row">
-      <div class="col" id='feedback'> PALAUTE</div>
-      <div class="col" id="suosittelut"> SUOSITTELUT </div>
-      <div class="col" id="blogi"> BLOGI </div>
+<div className="container">
+  <div className="row">
+      <div className="col" id='feedback'> PALAUTE</div>
+      <div className="col" id="suosittelut"> SUOSITTELUT </div>
+      <div className="col" id="blogi"> BLOGI </div>
   </div>
 </div>
 

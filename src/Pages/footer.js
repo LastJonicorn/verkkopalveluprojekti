@@ -31,14 +31,14 @@ function App() {
       />
       </div>
       {/* pitää muuttaa tätä leveyttä */}
-      <div class="col-lg-5 col-sm-4 right" id="oikea">
+      <div className="col-lg-5 col-sm-4 right" id="oikea">
                <h5 className="oikea">Löydät meidät myös somesta!</h5>
 
         <p>
-        <a href="#" class="fa fa-facebook"></a>
-        <a href="#" class="fa fa-twitter"></a>
-        <a href='#' class="fa fa-instagram"></a>
-        <a href='#' class="fa fa-snapchat-ghost"></a>
+        <a href="#" className="fa fa-facebook"></a>
+        <a href="#" className="fa fa-twitter"></a>
+        <a href='#' className="fa fa-instagram"></a>
+        <a href='#' className="fa fa-snapchat-ghost"></a>
         </p>
       </div>
     </div>

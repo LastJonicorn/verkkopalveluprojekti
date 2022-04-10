@@ -10,7 +10,7 @@ import Ostoskori from './Pages/Ostoskori';
 import Lautapelit from './Pages/Lautapelit';
 import {Route, Routes} from 'react-router';
 
-const url = '';
+const url = 'http://localhost/verkkopalveluprojekti-backend/';
 
 function App() {
   
@@ -33,7 +33,7 @@ function App() {
     
 
 {/*Navbar alkaa tästä*/}
-  <Nav />
+  <Nav url={url} />
   <div>
     <Routes>
       <Route path='/kysymykset' element={<FAQ/>}/>

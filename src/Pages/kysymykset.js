@@ -5,14 +5,13 @@ import Navbar from 'react-bootstrap/Navbar';
 import {Container, Nav, NavDropdown, Form, FormControl, Button} from 'react-bootstrap';
 import Accordion from 'react-bootstrap/Accordion';
 
-const URL = '';
 
 function App() {
   
   return (    
     <div>
       <Nav />
-      <div class="container">
+      <div className="container">
       <Accordion defaultActiveKey={['0']} alwaysOpen>
   <Accordion.Item eventKey="1">
     <Accordion.Header>Voinko toivoa tiettyä peliä valikoimiinne?</Accordion.Header>
