@@ -11,12 +11,11 @@ export default function Products({url}) {
   const [products, setProducts] = useState([]);
 
   useEffect(() => {
-      axios.get(url + 'products/getproducts.php')
+      axios.get(url + 'products/getproducts.php/')
         .then((response) => {
           const json = response.data;
-          console.log(json);
+          //console.log(json);
           setProducts(json);
-          console.log(json);
       }).catch (error => {
         alert(error.response === undefined ?  error : error.response.data.error);
       })
@@ -24,8 +23,17 @@ export default function Products({url}) {
   
 
   return (
+
     <div className="App">
-  
+      <div>
+      {products.map(tuote => (
+        <div key={tuote.tuotenro}>
+          {tuote.tuotenimi}
+        </div>
+      ))}
+    </div>
+
+
       <div className="row">
       <div className="col-7">
 
