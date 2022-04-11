@@ -41,8 +41,7 @@ function App() {
       <Route path='/' element={<Etusivu/>}/>
       <Route path='/Ostoskori' element={<Ostoskori/>}/>
       <Route path='/products/:tuoteryhmanro' element={<Lautapelit url={url}/>}/>
-      <Route path='/products/:tuoteryhmanro' element={<Korttipelit/>}/>
-
+      <Route path='/products/:tuoteryhmanro' element={<Korttipelit url={url}/>}/>
 
     </Routes>
   </div>

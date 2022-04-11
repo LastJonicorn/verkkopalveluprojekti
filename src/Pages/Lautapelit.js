@@ -3,23 +3,29 @@ import React,{useState,useEffect} from 'react';
 import axios from 'axios';
 import '../Lautapelit.css';
 import 'bootstrap/dist/css/bootstrap.css';
+import {Link, useParams} from 'react-router-dom';
 import Card from 'react-bootstrap/Card';
 
 
 export default function Products({url}) {
   
   const [products, setProducts] = useState([]);
+  const [categoryName, setCategoryName] = useState('');
+
+  let params = useParams();
 
   useEffect(() => {
-      axios.get(url + 'products/getproducts.php/')
+    console.log(url + 'products/getproducts.php/' + params.tuoteryhmanro);
+      axios.get(url + 'products/getproducts.php/' + params.tuoteryhmanro)
         .then((response) => {
           const json = response.data;
           //console.log(json);
+          setCategoryName(json);
           setProducts(json);
       }).catch (error => {
         alert(error.response === undefined ?  error : error.response.data.error);
       })
-  }, [])
+  }, [params])
   
 
   return (
