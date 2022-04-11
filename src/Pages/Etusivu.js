@@ -110,9 +110,11 @@ function App() {
 {/*Grid Layout alapuoli alkaa tästä*/}
 <div className="container">
   <div className="row">
-      <div className="col" id='feedback'> PALAUTE</div>
+    <a className="col" id='feedback' href=''>
+      <div className="" id=''> PALAUTE</div>
+    </a>
       <div className="col" id="suosittelut"> SUOSITTELUT </div>
-      <div className="col" id="uutiset"> UUTISET </div>
+      <a className="col"  id="uutiset" href="/Uutiset">UUTISET</a>
   </div>
 </div>
 
