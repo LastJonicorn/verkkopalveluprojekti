@@ -112,7 +112,7 @@ function App() {
   <div className="row">
       <div className="col" id='feedback'> PALAUTE</div>
       <div className="col" id="suosittelut"> SUOSITTELUT </div>
-      <div className="col" id="blogi"> BLOGI </div>
+      <a className="col"  id="blogi" href="/Blogi">BLOGI</a>
   </div>
 </div>
 
