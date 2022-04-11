@@ -158,7 +158,7 @@ h1{
   padding-bottom: 25px;
 }
 
-/* UUTISET */
+/* BLOGI */
 #uutiset{
   background-image: url("../public/Kuvat/blogi.jpg");
   background-position: center;
@@ -175,7 +175,7 @@ h1{
   text-align:justify;
   width: 3em;
 }
-#blogi:hover{
+#uutiset:hover{
   box-shadow: 0px 0px 15px rgb(121, 23, 80);
 }
 

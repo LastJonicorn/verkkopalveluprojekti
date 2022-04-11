@@ -8,7 +8,6 @@ import Etusivu from './Pages/Etusivu';
 import FAQ from './Pages/kysymykset';
 import Ostoskori from './Pages/Ostoskori';
 import Lautapelit from './Pages/Lautapelit';
-import Korttipelit from './Pages/Korttipelit';
 import {Route, Routes} from 'react-router';
 
 const url = 'http://localhost/verkkopalveluprojekti-backend/';
@@ -40,9 +39,7 @@ function App() {
       <Route path='/kysymykset' element={<FAQ/>}/>
       <Route path='/' element={<Etusivu/>}/>
       <Route path='/Ostoskori' element={<Ostoskori/>}/>
-      <Route path='/products/:tuoteryhmanro' element={<Lautapelit url={url}/>}/>
-      <Route path='/products/:tuoteryhmanro' element={<Korttipelit/>}/>
-
+      <Route path='/products' element={<Lautapelit/>}/>
 
     </Routes>
   </div>
