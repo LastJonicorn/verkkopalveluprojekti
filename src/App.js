@@ -14,6 +14,7 @@ import {useState, useEffect} from 'react';
 const url = 'http://localhost/verkkopalveluprojekti-backend/';
 
 function App() {
+  /*
   const [cart, setCart] = useState([]);
 
   useEffect(() => {
@@ -48,7 +49,7 @@ function App() {
     setCart(modifiedCart);
     localStorage.setItem('cart',JSON.stringify(modifiedCart));
   }
-  
+  */
   return (
     <div className="App" >
 
