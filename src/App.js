@@ -40,7 +40,7 @@ function App() {
       <Route path='/kysymykset' element={<FAQ/>}/>
       <Route path='/' element={<Etusivu/>}/>
       <Route path='/Ostoskori' element={<Ostoskori/>}/>
-      <Route path='/products/:tuoteryhmanro' element={<Lautapelit/>}/>
+      <Route path='/products/:tuoteryhmanro' element={<Lautapelit url={url}/>}/>
       <Route path='/products/:tuoteryhmanro' element={<Korttipelit/>}/>
 
 
