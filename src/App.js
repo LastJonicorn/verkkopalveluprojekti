@@ -8,6 +8,7 @@ import Etusivu from './Pages/Etusivu';
 import FAQ from './Pages/kysymykset';
 import Ostoskori from './Pages/Ostoskori';
 import Lautapelit from './Pages/Lautapelit';
+import Uutiset from './Pages/Uutiset';
 import {Route, Routes} from 'react-router';
 import {useState, useEffect} from 'react';
 
@@ -76,9 +77,10 @@ function App() {
       <Route path='/' element={<Etusivu/>}/>
       <Route path='/Ostoskori' element={<Ostoskori/>}/>
       <Route path='/products' element={<Lautapelit/>}/>
-
+      <Route path='/Uutiset' element={<Uutiset/>}/>
     </Routes>
   </div>
+
   
 {/*Grid Layout alkaa tästä*/}
 <Footer />

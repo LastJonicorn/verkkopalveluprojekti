@@ -5,7 +5,6 @@ import Navbar from 'react-bootstrap/Navbar';
 import {Container, Nav, NavDropdown, Form, FormControl, Button} from 'react-bootstrap';
 import Accordion from 'react-bootstrap/Accordion';
 
-
 function App() {
   
   return (    

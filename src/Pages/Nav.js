@@ -39,6 +39,9 @@ export default function Nav({url}) {
         <li className="nav-item">
           <Link className="nav-link" id="link" to="/kysymykset">FAQ</Link>
         </li>
+        <li className="nav-item">
+          <Link className="nav-link" id="link" to="/Uutiset">Uutiset</Link>
+        </li>
         <li className="nav-item dropdown" id="link">
           <a className="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Kategoriat
