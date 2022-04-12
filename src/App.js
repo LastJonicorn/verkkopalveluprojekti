@@ -25,11 +25,11 @@ function App() {
   }, [])
 
   function addToCart(product) {
-    if (cart.some(item => item.id === product.id)) {
-      const existingProduct = cart.filter(item => item.id === product.id);
-      updateAmount(parseInt(existingProduct[0].amount) + 1,product);
+    if (cart.some(item => tuotenro === tuoteryhmanro)) {
+      const existingProduct = cart.filter(item => tuotenro === tuoteryhmanro);
+      updateAmount(parseInt(tuote[0].amount) + 1, tuote);
     } else {
-      product['amount'] = 1;
+      tuote['amount'] = 1;
       const newCart = [...cart,product];
       setCart(newCart);
       localStorage.setItem('cart',JSON.stringify(newCart));
@@ -38,14 +38,14 @@ function App() {
   }
 
   function removeFromCart(product) {
-    const itemsWithoutRemoved = cart.filter(item = item.id !== product.id);
+    const itemsWithoutRemoved = cart.filter(item = tuotenro !== product.id);
     setCart(itemsWithoutRemoved);
     localStorage.setItem('cart',JSON.stringify(itemsWithoutRemoved));
   }
 
   function updateAmount(amount, product) {
     product.amount = amount;
-    const index = cart.findIndex((item => item.id === product.id));
+    const index = cart.findIndex((item => tuotenro === product.id));
     const modifiedCart = Object.assign([...cart],{[index]: product});
     setCart(modifiedCart);
     localStorage.setItem('cart',JSON.stringify(modifiedCart));
