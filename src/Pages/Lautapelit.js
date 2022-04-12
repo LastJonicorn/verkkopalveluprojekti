@@ -19,9 +19,9 @@ export default function Products({url}) {
       axios.get(url + 'products/getproducts.php/' + params.tuoteryhmanro)
         .then((response) => {
           const json = response.data;
-          //console.log(json);
-          setCategoryName(json);
-          setProducts(json);
+          console.log(json);
+          setCategoryName(json.tuoteryhma);
+          setProducts(json.tuote);
       }).catch (error => {
         alert(error.response === undefined ?  error : error.response.data.error);
       })
