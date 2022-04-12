@@ -77,7 +77,7 @@ function App() {
       <Route path='/Uutiset' element={<Uutiset/>}/>
       <Route path='/' element={<Etusivu/>}/>
       <Route path='/Ostoskori' element={<Ostoskori/>}/>
-      <Route path='/products' element={<Lautapelit/>}/>
+      <Route path='/products/:tuoteryhmanro' element={<Lautapelit url={url}/>}/>      
       <Route path='/Uutiset' element={<Uutiset/>}/>
     </Routes>
   </div>
