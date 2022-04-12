@@ -73,6 +73,7 @@ function App() {
   <div>
     <Routes>
       <Route path='/kysymykset' element={<FAQ/>}/>
+      <Route path='/Uutiset' element={<Uutiset/>}/>
       <Route path='/' element={<Etusivu/>}/>
       <Route path='/Ostoskori' element={<Ostoskori/>}/>
       <Route path='/products/:tuoteryhmanro' element={<Lautapelit url={url}/>}/>

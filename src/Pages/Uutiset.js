@@ -1,13 +1,16 @@
 import React from 'react';
 import '../App.css';
 import 'bootstrap/dist/css/bootstrap.css';
-import {Container, Nav, NavDropdown, Form, FormControl, Button} from 'react-bootstrap';
-import Carousel from 'react-bootstrap/Carousel';
+import {Button} from 'react-bootstrap';
+
 
 
 function App() {
-  
-      
+  (
+    <Button variant="primary">
+    Profile <Badge bg="secondary">9</Badge>
+    <span className="visually-hidden">unread messages</span>
+  </Button>
     );
   }
   
