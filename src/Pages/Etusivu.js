@@ -3,8 +3,6 @@ import '../App.css';
 import 'bootstrap/dist/css/bootstrap.css';
 import Carousel from 'react-bootstrap/Carousel';
 
-const url = 'http://localhost/verkkokauppaprojekti-backend/';
-
 function App() {
   
   return (
