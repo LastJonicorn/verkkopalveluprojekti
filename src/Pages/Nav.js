@@ -46,7 +46,7 @@ export default function Nav({url}) {
           <a className="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Kategoriat
           </a>
-            <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
+            <ul className="dropdown-menu" id="dropdown" aria-labelledby="navbarDropdown">
               {categories.map(tuoteryhma => (
                 <li key={tuoteryhma.tuoteryhmanro}>
                   {<Link
