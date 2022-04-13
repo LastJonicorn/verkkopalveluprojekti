@@ -8,8 +8,8 @@ import {Link} from 'react-router-dom';
 function App() {
   
   return (
-
-<footer className="info">
+<div className="container" id="footer">
+  <footer className="info">
     <div className="row">
       <div className="col-lg-3 col-md-10 mb-4 mb-md-0">
         <h5 className="text">Yritystiedot</h5>
@@ -40,9 +40,11 @@ function App() {
         <a href='#' className="fa fa-instagram"></a>
         <a href='#' className="fa fa-snapchat-ghost"></a>
         </p>
+        </div>
       </div>
-    </div>
-  </footer>
+      </footer>
+  </div>
+  
   );
 }
 

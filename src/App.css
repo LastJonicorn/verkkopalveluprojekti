@@ -21,7 +21,10 @@ max-width: 100%;
 }
 
 #Ostoskori{
-  padding-left: 10em;
+  float: right;
+  position: absolute;
+  margin-left: 20em;
+  margin-top: 40px;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -137,6 +140,15 @@ h1{
   height: 10em;
 }
 
+.container-tuote{
+  padding: 5px;
+  float: left;
+}
+
+.tuotekuva{
+  width: 200px;
+}
+
 .col-4{
   padding: 2em;
 }
@@ -241,6 +253,9 @@ footer{
   background-color: #cca7fc;
   text-align: center;
   overflow: hidden;
+  left: 0;
+  right: 0;
+  width: 100%;
 }
 .alalogo{
   height: 160px;
@@ -250,6 +265,7 @@ footer{
 #oikea{
   padding-left: 10%;
   padding-right: 10%;
+  padding-top: 25px;
 }
 
 .fa {
@@ -336,7 +352,7 @@ footer{
 
 #link{
   font-size: 1.5em;
-  padding-left: 6em;
+  margin: 50px;
 }
 
 #navbarScrollingDropdown{
@@ -349,4 +365,13 @@ footer{
 .nav-lautapelit {
   position: relative;
   text-align: justify;
+}
+
+#footer {
+  margin: 0%;
+  width: 100%;
+  padding: 0%;
+}
+.container {
+  max-width: none !important;
 }

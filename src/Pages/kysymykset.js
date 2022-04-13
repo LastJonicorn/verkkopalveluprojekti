@@ -10,7 +10,8 @@ function App() {
   return (    
     <div>
       <Nav />
-      <div className="container">
+      <div className="container p-4">
+        <div className=""><h1>Usein kysytyt kysymykset</h1></div>
       <Accordion defaultActiveKey={['0']} alwaysOpen>
   <Accordion.Item eventKey="1">
     <Accordion.Header>Voinko toivoa tiettyä peliä valikoimiinne?</Accordion.Header>
