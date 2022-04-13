@@ -30,7 +30,7 @@ export default function Products({url}) {
 
   return (
 
-    <div className='container-tuote'>
+    <div className='container'>
     <div className="row">
       <div className="col-8">        
       <h2>{categoryName}</h2>
