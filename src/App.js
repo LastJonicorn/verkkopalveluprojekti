@@ -22,20 +22,19 @@ function App() {
 
   useEffect(() => {
     if ('cart' in localStorage) {
-      setCart(JSON.parse(localStorage.getIitem('cart')));
+      setCart(JSON.parse(localStorage.getItem('cart')));
     }
   }, [])
   function addToCart(tuote){
     const newCart=[...cart,tuote];
     setCart(newCart);
     localStorage.setItem('cart',JSON.stringify(newCart));
-  }
-/*
+  }/*
   function addToCart(tuote) {
     if (cart.some(item => item.id === tuotenimi)) {
       const existingProduct = cart.filter(item => item.id === tuotenimi);
       updateAmount(parseInt(tuote[0].amount) + 1, tuote);
-    } /*else {
+    } else {
       tuote['amount'] = 1;
       const newCart = [...cart,tuote];
       setCart(newCart);
