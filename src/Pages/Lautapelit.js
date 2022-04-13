@@ -32,7 +32,7 @@ export default function Products({url, addToCart}) {
 
     <div className='container'>
     <div className="row">
-      <div className="col-8">        
+      <div className="col-12">        
       <h2>{categoryName}</h2>
       {products.map(tuote => (
         <div className= 'container-tuote'>
