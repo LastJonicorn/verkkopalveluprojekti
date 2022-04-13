@@ -7,7 +7,7 @@ import {Link, useParams} from 'react-router-dom';
 import Card from 'react-bootstrap/Card';
 
 
-export default function Products({url}) {
+export default function Products({url, addToCart}) {
   
   const [products, setProducts] = useState([]);
   const [categoryName, setCategoryName] = useState('');
@@ -41,6 +41,7 @@ export default function Products({url}) {
           <div>
             <img className='tuotekuva' src={url + '/images/' + tuote.kuva} alt='Loading'/>
           </div>
+          <button className='btn btn-primary' type='button' onClick={addToCart(tuote)}>Lisää</button>
         </div>
         </div>
       ))}
