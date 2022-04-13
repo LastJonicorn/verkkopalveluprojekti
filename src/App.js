@@ -9,13 +9,15 @@ import FAQ from './Pages/kysymykset';
 import Ostoskori from './Pages/Ostoskori';
 import Lautapelit from './Pages/Lautapelit';
 import Uutiset from './Pages/Uutiset';
+import Cart from './Pages/Ostoskori';
 import {Route, Routes} from 'react-router';
 import {useState, useEffect} from 'react';
+import Products from './Pages/Lautapelit';
 
 const url = 'http://localhost/verkkopalveluprojekti-backend/';
 
 function App() {
-  /*
+  
   const [cart, setCart] = useState([]);
 
   useEffect(() => {
@@ -23,29 +25,34 @@ function App() {
       setCart(JSON.parse(localStorage.getIitem('cart')));
     }
   }, [])
-
-  function addToCart(product) {
-    if (cart.some(tuote => tuotenro === tuoteryhmanro)) {
-      const existingProduct = cart.filter(item => tuotenro === tuoteryhmanro);
+  function addToCart(tuote){
+    const newCart=[...cart,tuote];
+    setCart(newCart);
+    localStorage.setItem('cart',JSON.stringify(newCart));
+  }
+/*
+  function addToCart(tuote) {
+    if (cart.some(item => item.id === tuotenimi)) {
+      const existingProduct = cart.filter(item => item.id === tuotenimi);
       updateAmount(parseInt(tuote[0].amount) + 1, tuote);
-    } else {
+    } /*else {
       tuote['amount'] = 1;
       const newCart = [...cart,tuote];
       setCart(newCart);
       localStorage.setItem('cart',JSON.stringify(newCart));
 
     }
-  }
-
+  }*/
+/*
   function removeFromCart(tuote) {
-    const itemsWithoutRemoved = cart.filter(item = tuotenro !== product.id);
+    const itemsWithoutRemoved = cart.filter(tuote = tuotenro !== tuotenimi);
     setCart(itemsWithoutRemoved);
     localStorage.setItem('cart',JSON.stringify(itemsWithoutRemoved));
   }
 
   function updateAmount(amount, tuote) {
-    product.amount = amount;
-    const index = cart.findIndex((item => tuotenro === tuoteryhmanro));
+    tuote.amount = amount;
+    const index = cart.findIndex((item => item.id === tuoteryhmanro));
     const modifiedCart = Object.assign([...cart],{[index]: tuote});
     setCart(modifiedCart);
     localStorage.setItem('cart',JSON.stringify(modifiedCart));
@@ -77,6 +84,8 @@ function App() {
       <Route path='/Uutiset' element={<Uutiset/>}/>
       <Route path='/' element={<Etusivu/>}/>
       <Route path='/Ostoskori' element={<Ostoskori/>}/>
+      <Route path='/products/:tuoteryhmanro' element={<Products url={url} addToCart={addToCart} />} />
+      {/* <Route path='/Ostoskori' element={<Ostoskori cart={cart} removeFromCart={removeFromCart} updateAmount={updateAmount()}/> }/> */}
       <Route path='/products/:tuoteryhmanro' element={<Lautapelit url={url}/>}/>      
       <Route path='/Uutiset' element={<Uutiset/>}/>
     </Routes>
