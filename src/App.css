@@ -21,7 +21,10 @@ max-width: 100%;
 }
 
 #Ostoskori{
-  padding-left: 10em;
+  float: right;
+  position: absolute;
+  margin-left: 20em;
+  margin-top: 40px;
 }
 
 @media (prefers-reduced-motion: no-preference) {
