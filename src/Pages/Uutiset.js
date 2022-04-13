@@ -8,15 +8,22 @@ function App() {
   return (    
     <Accordion className='accordion'>
   <Accordion.Item eventKey="0">
-    <Accordion.Header>Pääsiäistarjoukset!</Accordion.Header>
+    <Accordion.Header>Pääsiäistarjoukset</Accordion.Header>
     <Accordion.Body>
       Kaikki kortti- ja strategiapelit -20% 8. - 17.4. välisen ajan!
     </Accordion.Body>
   </Accordion.Item>
   <Accordion.Item eventKey="1">
-    <Accordion.Header>Olemme lisänneet valikoimaamme runsaasti lautapelejä: katso lista!</Accordion.Header>
+    <Accordion.Header>Olemme lisänneet valikoimaamme lautapelejä: katso lista!</Accordion.Header>
     <Accordion.Body>
-      
+      <li>Senet</li>
+      <li>Diceball!</li>
+      <li>The Game of Life</li>
+      <li>Risk</li>
+      <li>Settlers of Catan</li>
+      <li>Marvel United</li>
+      <li>Oceans</li>
+      <li>Rallyman GT</li>
     </Accordion.Body>
   </Accordion.Item>
 </Accordion>
