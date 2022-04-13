@@ -30,19 +30,24 @@ export default function Products({url}) {
 
   return (
 
-    <div className="App">
-      <div>
-        <h2>{categoryName}</h2>
+    <div className='container-tuote'>
+    <div className="row">
+      <div className="col-8">        
+      <h2>{categoryName}</h2>
       {products.map(tuote => (
+        <div className= 'container-tuote'>
         <div key={tuote.tuotenro}>
           <h3>{tuote.tuotenimi}</h3>
           <div>
-            <img src={url + '/images/' + tuote.kuva} alt='Loading'/>
+            <img className='tuotekuva' src={url + '/images/' + tuote.kuva} alt='Loading'/>
           </div>
+        </div>
         </div>
       ))}
     </div>
-  </div>
+    </div>
+    </div>
+
   );
   
 }

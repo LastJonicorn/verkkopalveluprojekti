@@ -137,6 +137,15 @@ h1{
   height: 10em;
 }
 
+.container-tuote{
+  padding: 5px;
+  float: left;
+}
+
+.tuotekuva{
+  width: 200px;
+}
+
 .col-4{
   padding: 2em;
 }
