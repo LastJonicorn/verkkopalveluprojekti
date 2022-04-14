@@ -3,8 +3,7 @@ import React,{useState,useEffect} from 'react';
 import axios from 'axios';
 import '../Lautapelit.css';
 import 'bootstrap/dist/css/bootstrap.css';
-import {Link, useParams} from 'react-router-dom';
-import Card from 'react-bootstrap/Card';
+import {useParams} from 'react-router-dom';
 
 
 export default function Products({url, addToCart}) {
@@ -42,7 +41,8 @@ export default function Products({url, addToCart}) {
           </div>
           <h3>{tuote.tuotenimi}</h3>
           <p>{tuote.hinta}€</p>
-          <button className='btn btn-primary' type='button' onClick={()=>addToCart(tuote)}>Lisää</button>
+          <p>{tuote.tietoa}</p>
+          <button className='btn btn-primary' type='button' onClick={e=>addToCart(tuote)}>Lisää koriin</button>
         </div>
         </div>
       ))}

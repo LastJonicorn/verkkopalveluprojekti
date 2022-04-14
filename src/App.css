@@ -20,6 +20,15 @@ max-width: 100%;
   padding-left: 2em;  
 }
 
+.OstoskoriKuvake{
+  width: 3em;
+  padding-top: 50px;
+  margin-left: 8em;
+}
+.OstoskoriLuku{
+  font-size: 30px;
+}
+
 #Ostoskori{
   float: right;
   position: absolute;
@@ -142,12 +151,19 @@ h1{
 }
 
 .container-tuote{
+  margin-left: 1em;
+  margin-top: 1em;
   padding: 5px;
+  width: 270px;
+  height: 470px;
+  max-height: 550px;
   float: left;
+  background-color: white;
 }
 
 .tuotekuva{
   height: 200px;
+  max-width: 250px;
 }
 
 .col-4{

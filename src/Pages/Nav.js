@@ -1,12 +1,13 @@
 import React, { createFactory } from 'react';
 import '../App.css';
 import 'bootstrap/dist/css/bootstrap.css';
+import Ostoskori from './Ostoskori';
 import {Link} from 'react-router-dom';
 import {useState, useEffect} from 'react';
 import axios from 'axios';
 
 
-export default function Nav({url}) {
+export default function Nav({url,cart}) {
   const [categories, setCategories] = useState([]);
 
 
@@ -56,9 +57,9 @@ export default function Nav({url}) {
               ))}
           </ul>
         </li>
-            <li className="nav-item">
-              <Link className="nav-link" id="Ostoskori" to="/Ostoskori"><img src='../Kuvat/ShoppingCart.png'/></Link>
-        </li>
+          <li className="nav-item">
+            <Ostoskori cart={cart}/>
+          </li>
       </ul>
     </div>
   </div>
