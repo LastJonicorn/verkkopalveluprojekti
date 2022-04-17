@@ -11,17 +11,44 @@ import Uutiset from './Pages/Uutiset';
 import {Route, Routes} from 'react-router';
 import {useState, useEffect} from 'react';
 
+
 const url = 'http://localhost/verkkopalveluprojekti-backend/';
 
 function App() {
   
   const [cart, setCart] = useState([]);
 
+    useEffect(() => {
+      if('cart' in localStorage) {
+        setCart(JSON.parse(localStorage.getItem('cart')));
+      }
+    }, [])
+ 
   function addToCart(tuote){
+    if (cart.some( tuote => tuote.tuotenimi === tuote.tuotenro)) {
+      const existingProduct = cart.filter(tuote => tuote.tuotenimi === tuote.tuotenro);
+      updateAmount(parseInt(existingProduct[0].amount) +1, tuote);
+    } else {
     const newCart=[...cart,tuote];
     setCart(newCart);
     localStorage.setItem('cart',JSON.stringify(newCart));
+    }
+  } 
+
+  function removeFromCart(tuote) {
+    const itemsWithoutRemoved = cart.filter(tuote => tuote.tuotenimi !== tuote.tuotenro);
+    setCart(itemsWithoutRemoved);
+    localStorage.setItem('cart',JSON.stringify(itemsWithoutRemoved));
   }
+
+  function updateAmount(amount, tuote) {
+    tuote.amount = amount;
+    const index = cart.findIndex((tuote => tuote.tuotenimi === tuote.tuotenro));
+    const modifiedCart = Object.assign([...cart],{[index]: tuote});
+    setCart(modifiedCart);
+    localStorage.setItem('cart',JSON.stringify(modifiedCart));
+  }
+
   
   return (
     <div className="App" >
@@ -49,9 +76,9 @@ function App() {
       <Route path='/kysymykset' element={<FAQ/>}/>
       <Route path='/Uutiset' element={<Uutiset/>}/>
       <Route path='/' element={<Etusivu/>}/>
-      <Route path='/Ostoskori' element={<Ostoskori/>}/>
-      {/* <Route path='/Ostoskori' element={<Ostoskori cart={cart} removeFromCart={removeFromCart} updateAmount={updateAmount()}/> }/> */}
-      <Route path='/products/:tuoteryhmanro' element={<Lautapelit url={url} addToCart={addToCart}/>}/>      
+      <Route path='/Ostoskori' element={<Ostoskori cart={cart} removeFromCart={removeFromCart} updateAmount={updateAmount}/> }/> 
+      <Route path='/products/:tuoteryhmanro' element={<Lautapelit url={url} addToCart={addToCart}/>}/>     
+      <Route path='/products/:tuotenro' element={<Lautapelit url={url}/>}/>      
       <Route path='/Uutiset' element={<Uutiset/>}/>
     </Routes>
   </div>
