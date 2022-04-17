@@ -1,10 +1,28 @@
-import React from 'react';
+import React,{useState,useEffect} from 'react';
 import '../App.css';
 import 'bootstrap/dist/css/bootstrap.css';
 import Carousel from 'react-bootstrap/Carousel';
+import axios from 'axios';
+import {Link} from 'react-router-dom';
 
-function App() {
+
+export default function Etusivu({url}) {
   
+  const [categories, setCategories] = useState([]);
+
+
+    useEffect(() => {
+      console.log(url);
+        axios.get('http://localhost/verkkopalveluprojekti-backend/products/getcategories.php')
+          .then((response) => {
+            const json = response.data;
+            setCategories(json);
+            //console.log(json);
+        }).catch (error => {
+          alert(error.response === undefined ?  error : error.response.data.error);
+        })
+    }, [])
+
   return (
     <div className="App">
 
@@ -16,29 +34,12 @@ function App() {
       <div className="col-2">
         
         {/* SIDEBAR */}
-        <ul className="nav flex-column" id="sidebar">
-          <li className="nav-item" id="sivukategoria">
-            <a className="nav-link"  id="kategoriaTxt" href="/Lautapelit">Lautapelit</a>
-          </li>
-          <li className="nav-item"  id="sivukategoria">
-            <a className="nav-link"  id="kategoriaTxt" href="/Korttipelit">Korttipelit</a>
-          </li>
-          <li className="nav-item"  id="sivukategoria">
-            <a className="nav-link"  id="kategoriaTxt" href="#">Strategiapelit</a>
-          </li>
-          <li className="nav-item"  id="sivukategoria">
-            <a className="nav-link"  id="kategoriaTxt" href="#">Koko perheelle</a>
-          </li>
-          <li className="nav-item"  id="sivukategoria">
-            <a className="nav-link"  id="kategoriaTxt" href="#">Roolipelit</a>
-          </li>
-          <li className="nav-item"  id="sivukategoria">
-            <a className="nav-link"  id="kategoriaTxt" href="#">Nopat</a>
-          </li>
-          <li className="nav-item"  id="sivukategoria">
-            <a className="nav-link"  id="kategoriaTxt" href="#">Miniatyyrit</a>
-          </li>
-        </ul>
+        {categories.map(tuoteryhma => (
+                <div id='sivukategoria' key={tuoteryhma.tuoteryhmanro}>
+                  {<Link
+                    to={'/products/' + tuoteryhma.tuoteryhmanro}>{tuoteryhma.tuoteryhmanimi}</Link>}
+                </div>
+              ))}
     </div>
 
 
@@ -121,5 +122,3 @@ function App() {
   
   );
 }
-
-export default App;

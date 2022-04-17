@@ -10,7 +10,6 @@ import Lautapelit from './Pages/Lautapelit';
 import Uutiset from './Pages/Uutiset';
 import {Route, Routes} from 'react-router';
 import {useState, useEffect} from 'react';
-import Products from './Pages/Lautapelit';
 
 const url = 'http://localhost/verkkopalveluprojekti-backend/';
 
@@ -46,6 +45,7 @@ function App() {
   <Nav url={url} cart={cart}/>
   <div>
     <Routes>
+      <Route path='/Etusivu' element={<Etusivu url={url}/>}/>      
       <Route path='/kysymykset' element={<FAQ/>}/>
       <Route path='/Uutiset' element={<Uutiset/>}/>
       <Route path='/' element={<Etusivu/>}/>
