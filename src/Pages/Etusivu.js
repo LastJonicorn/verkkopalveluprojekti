@@ -6,14 +6,16 @@ import axios from 'axios';
 import {Link} from 'react-router-dom';
 
 
-export default function Etusivu({url}) {
+const url = 'http://localhost/verkkopalveluprojekti-backend/';
+
+export default function Etusivu() {
   
   const [categories, setCategories] = useState([]);
 
 
     useEffect(() => {
       console.log(url);
-        axios.get('http://localhost/verkkopalveluprojekti-backend/products/getcategories.php')
+        axios.get(url + '/products/getcategories.php')
           .then((response) => {
             const json = response.data;
             setCategories(json);
