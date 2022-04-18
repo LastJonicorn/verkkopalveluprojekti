@@ -14,6 +14,7 @@ max-width: 100%;
 
 .dropdown-menu.show{
   margin-left: 9em;
+  font-family: 'Mukta', sans-serif;
 }
 
 .navbar-brand {
@@ -29,6 +30,7 @@ max-width: 100%;
   font-size: 30px;
   text-decoration: none;
   color: #363138;
+  font-family: 'Mukta', sans-serif;
 }
 
 #Ostoskori{
@@ -48,6 +50,7 @@ max-width: 100%;
   padding-top: 20px;
   font-family: 'Josefin Slab', serif;
   font-size: 40px;
+  
 }
 .total{
   float: right;
@@ -105,6 +108,7 @@ h1{
   border-style: solid;
   border-color: #F8F1FF;
   background-color: #F8F1FF;
+  font-family: 'Mukta', sans-serif;
   font-size: 25px;
   width: 15em;
   margin-left: -80px;
@@ -120,7 +124,8 @@ h1{
   height: 14%;
   text-decoration: solid #363138 underline;
   font-size: 2em;
-  
+  text-decoration: none;
+  font-family: 'Mukta', sans-serif;
 }
 #kategoriaTxt{
   color:#363138
@@ -387,8 +392,9 @@ footer{
 }
 
 #link{
-  font-size: 1.5em;
+  font-size: 2em;
   margin: 50px;
+  font-family: 'Josefin Slab', serif;
 }
 
 #navbarScrollingDropdown{
@@ -413,4 +419,21 @@ footer{
 }
 #dropdown {
   margin-left: 0%;
+}
+
+@media screen and (max-width: 1024px) {
+  #sivukategoria {
+    display: none;
+  }
+  #navbarSupportedContent{
+    font-size: small;
+    overflow:visible;
+  }
+  .nav-item{
+    margin:-10px;
+  }
+
+  #carousel{
+   width: 80%;
+  }
 }
