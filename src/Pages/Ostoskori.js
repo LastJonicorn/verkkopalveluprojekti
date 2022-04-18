@@ -31,7 +31,7 @@ export default function Cart({cart,removeFromCart,updateAmount}) {
 
   //console.log(cart.length)
   return(
-    <div>
+    <div className='ostoskoritausta'>
       <h3 className='header-1'>Valitsemasi tuotteet</h3>
       <table className='table'>
         <tbody>
@@ -50,7 +50,7 @@ export default function Cart({cart,removeFromCart,updateAmount}) {
           })}
           <tr key={uuid() }>
             <td></td>
-            <td>{sum.toFixed(2)} €</td>
+            <td className="total">TOTAL : {sum.toFixed(2)} €</td>
             <td></td>
             <td></td>
           </tr>

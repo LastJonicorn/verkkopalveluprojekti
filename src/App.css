@@ -27,6 +27,8 @@ max-width: 100%;
 }
 .OstoskoriLuku{
   font-size: 30px;
+  text-decoration: none;
+  color: #363138;
 }
 
 #Ostoskori{
@@ -35,6 +37,22 @@ max-width: 100%;
   margin-left: 20em;
   margin-top: 40px;
   overflow: hidden;
+}
+.ostoskoritausta{
+  margin-left: 150px;
+  margin-right: 150px;
+  background-color:#F8F1FF;
+}
+.header-1{
+  margin-bottom: 40px;
+  padding-top: 20px;
+  font-family: 'Josefin Slab', serif;
+  font-size: 40px;
+}
+.total{
+  float: right;
+  margin-left: 30em;
+  margin-top: 40px;
 }
 
 @media (prefers-reduced-motion: no-preference) {

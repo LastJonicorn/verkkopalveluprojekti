@@ -57,10 +57,11 @@ export default function Nav({url,cart}) {
               ))}
           </ul>
         </li>
-          <li className="nav-item">
-            <Ostoskori cart={cart}/>
-            <img className='OstoskoriKuvake' src='../Kuvat/ShoppingCart.png'/>
+          <li className="nav-item" id="Ostoskorilinkki">
+             <a href="/Ostoskori">
+            <img className='OstoskoriKuvake' src='../Kuvat/ShoppingCart.png' href="/Ostoskori"/>
             <span className='OstoskoriLuku'>{cart.length}</span>
+            </a>
           </li>
       </ul>
     </div>
