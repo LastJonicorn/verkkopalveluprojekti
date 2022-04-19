@@ -8,6 +8,8 @@ import FAQ from './Pages/kysymykset';
 import Ostoskori from './Pages/Ostoskori';
 import Lautapelit from './Pages/Lautapelit';
 import Uutiset from './Pages/Uutiset';
+import Palaute from './Pages/Palaute';
+
 import {Route, Routes} from 'react-router';
 import {useState, useEffect} from 'react';
 
@@ -80,6 +82,7 @@ function App() {
       <Route path='/products/:tuoteryhmanro' element={<Lautapelit url={url} addToCart={addToCart}/>}/>     
       <Route path='/products/:tuotenro' element={<Lautapelit url={url}/>}/>      
       <Route path='/Uutiset' element={<Uutiset/>}/>
+      <Route path='/Palaute' element={<Palaute/>}/>
     </Routes>
   </div>
 
