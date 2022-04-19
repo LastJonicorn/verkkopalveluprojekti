@@ -101,6 +101,7 @@ h2{
 h1{
   padding-bottom: 0.1em;
   font-size: 30%;
+  font-family: 'Josefin Slab', serif;
 }
 
 /* SIDEBAR */
@@ -128,7 +129,12 @@ h1{
   font-family: 'Josefin Slab', serif;
 }
 #kategoriaTxt{
-  color:#363138
+  color:#363138;
+  font-family: 'Josefin Slab', serif;
+}
+#kategorianimi{
+  font-family: 'Josefin Slab', serif;
+  font-size: 3em;
 }
 /* CAROUSEL */
 #carousel{
