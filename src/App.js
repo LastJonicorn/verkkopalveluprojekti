@@ -27,7 +27,7 @@ function App() {
   function addToCart(tuote){
     if (cart.some( tuote => tuote.tuotenimi === tuote.tuotenro)) {
       const existingProduct = cart.filter(tuote => tuote.tuotenimi === tuote.tuotenro);
-      updateAmount(parseInt(existingProduct[0].amount) +1, tuote);
+      //updateAmount(parseInt(existingProduct[0].amount) +1, tuote);
     } else {
     const newCart=[...cart,tuote];
     setCart(newCart);
@@ -35,20 +35,20 @@ function App() {
     }
   } 
 
-  function removeFromCart(tuote) {
-    const itemsWithoutRemoved = cart.filter(tuote => tuote.tuotenimi !== tuote.tuotenro);
+  function removeFromCart(poistettavaTuote) {
+    const itemsWithoutRemoved = cart.filter(tuote => tuote.tuotenro !== poistettavaTuote.tuotenro);
     setCart(itemsWithoutRemoved);
     localStorage.setItem('cart',JSON.stringify(itemsWithoutRemoved));
   }
 
-  function updateAmount(amount, tuote) {
+   function updateAmount(amount, tuote) {
     tuote.amount = amount;
     const index = cart.findIndex((tuote => tuote.tuotenimi === tuote.tuotenro));
     const modifiedCart = Object.assign([...cart],{[index]: tuote});
     setCart(modifiedCart);
     localStorage.setItem('cart',JSON.stringify(modifiedCart));
   }
-
+ 
   
   return (
     <div className="App" >
@@ -76,7 +76,7 @@ function App() {
       <Route path='/kysymykset' element={<FAQ/>}/>
       <Route path='/Uutiset' element={<Uutiset/>}/>
       <Route path='/' element={<Etusivu/>}/>
-      <Route path='/Ostoskori' element={<Ostoskori cart={cart} removeFromCart={removeFromCart} updateAmount={updateAmount}/> }/> 
+      <Route path='/Ostoskori' element={<Ostoskori cart={cart} removeFromCart={removeFromCart}  updateAmount={updateAmount} /> }/> 
       <Route path='/products/:tuoteryhmanro' element={<Lautapelit url={url} addToCart={addToCart}/>}/>     
       <Route path='/products/:tuotenro' element={<Lautapelit url={url}/>}/>      
       <Route path='/Uutiset' element={<Uutiset/>}/>

@@ -7,26 +7,26 @@ import { createRef } from 'react/cjs/react.production.min';
 
 
 
-export default function Cart({cart,removeFromCart,updateAmount}) {
+export default function Cart({cart,removeFromCart, updateAmount}) {
   const [inputs,_] = useState([]);
   const [inputIndex, setInputIndex] = useState(-1);
 
-  useEffect(() =>{
+  /* useEffect(() =>{
     for (let i = 0; i < cart.length; i++){
       inputs[i] = React.createRef();
     }
   },[cart.length])
-
+/*  
   useEffect(() => {
     if (inputs.length > 0 && inputIndex > -1 && inputs[inputIndex].current !== null) {
       inputs[inputIndex].current.focus();
     }
-  },[cart])
-
+  },[cart]) */
+/* 
   function changeAmount(e,tuote,index) {
     updateAmount(e.target.value, tuote);
     setInputIndex(index);
-  }
+  } */
 
   let sum = 0;
 
@@ -36,7 +36,7 @@ export default function Cart({cart,removeFromCart,updateAmount}) {
       <h3 className='header-1'>Valitsemasi tuotteet</h3>
       <table className='table'>
         <tbody>
-          {cart.map((tuote,index) => {
+          {cart.map((tuote, index) => {
             sum+=parseFloat(tuote.tuotehinta);
             return (
               <tr key ={uuid()}>
