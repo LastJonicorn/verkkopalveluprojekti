@@ -42,9 +42,6 @@ export default function Cart({cart,removeFromCart,updateAmount}) {
               <tr key ={uuid()}>
                 <td>{tuote.tuotenimi}</td>
                 <td>{tuote.hinta} € </td>
-                <td>
-                  <input ref={inputs[index]} style={{width: '60px'}} value={tuote.amount} onChange={e=> changeAmount(e,tuote,index)} />
-                </td>
                 <td><a href="#" onClick={() => removeFromCart(tuote)}>Poista</a></td>
               </tr>
             )

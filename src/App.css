@@ -14,7 +14,7 @@ max-width: 100%;
 
 .dropdown-menu.show{
   margin-left: 9em;
-  font-family: 'Mukta', sans-serif;
+  font-family: 'Josefin Slab', serif;
 }
 
 .navbar-brand {
@@ -90,7 +90,7 @@ h2{
 .lautapelikauppa{
   font-size: 30px;
   letter-spacing: .2rem;
-  font-family: 'Mukta', sans-serif;
+  font-family: 'Josefin Slab', serif;
 }
 
 .weleho{
@@ -108,7 +108,7 @@ h1{
   border-style: solid;
   border-color: #F8F1FF;
   background-color: #F8F1FF;
-  font-family: 'Mukta', sans-serif;
+  font-family: 'Josefin Slab', serif;
   font-size: 25px;
   width: 15em;
   margin-left: -80px;
@@ -125,7 +125,7 @@ h1{
   text-decoration: solid #363138 underline;
   font-size: 2em;
   text-decoration: none;
-  font-family: 'Mukta', sans-serif;
+  font-family: 'Josefin Slab', serif;
 }
 #kategoriaTxt{
   color:#363138
@@ -279,7 +279,7 @@ h1{
 .accordion-body, .accordion-header, button.accordion-button, button.accordion-button.collapsed{
   color: #656176;
   background-color: #F8F1FF;
-  font-family:'Mukta', sans-serif;
+  font-family:'Josefin Slab', serif;
   font-size: 20PX;
 }
 .accordion-header:hover{
@@ -398,7 +398,7 @@ footer{
 }
 
 #navbarScrollingDropdown{
-  font-size: 1.5em;
+  font-size: 2em;
   padding-left: 6em;
 }
 
@@ -419,6 +419,7 @@ footer{
 }
 #dropdown {
   margin-left: 0%;
+  font-size: 100%;
 }
 
 @media screen and (max-width: 1024px) {
