@@ -6,6 +6,7 @@ import axios from 'axios';
 import {Link} from 'react-router-dom';
 
 
+
 const url = 'http://localhost/verkkopalveluprojekti-backend/';
 
 export default function Etusivu() {
@@ -111,7 +112,7 @@ export default function Etusivu() {
 {/*Grid Layout alapuoli alkaa tästä*/}
 <div className="container">
   <div className="row">
-    <a className="col" id='feedback' href=''>
+    <a className="col" id='feedback' href='/Palaute'>
       <div className="" id=''> PALAUTE</div>
     </a>
       <div className="col" id="suosittelut"> SUOSITTELUT </div>
