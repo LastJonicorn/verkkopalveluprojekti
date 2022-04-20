@@ -37,12 +37,12 @@ export default function Cart({cart,removeFromCart, updateAmount}) {
       <table className='table'>
         <tbody>
           {cart.map((tuote, index) => {
-            sum+=parseFloat(tuote.tuotehinta);
+            sum+=parseFloat(tuote.hinta);
             return (
               <tr key ={uuid()}>
                 <td>{tuote.tuotenimi}</td>
                 <td>{tuote.hinta} € </td>
-                <td><a href="#" onClick={() => removeFromCart(tuote)}>Poista</a></td>
+                <td><a href="#" onClick={() => removeFromCart(tuote)} >Poista</a></td>
               </tr>
             )
           })}
