@@ -39,6 +39,9 @@ function App() {
 
   function removeFromCart(poistettavaTuote) {
     const itemsWithoutRemoved = cart.filter(tuote => tuote.tuotenro !== poistettavaTuote.tuotenro);
+    //const removedItem = cart.find(tuote => tuote.tuotenro === poistettavaTuote.tuotenro);
+    // Uusi array, delete object javascript splice esimerkkiä voi kattoo sivulta ''love2dev''
+    //console.log(removedItem);
     setCart(itemsWithoutRemoved);
     localStorage.setItem('cart',JSON.stringify(itemsWithoutRemoved));
   }
@@ -51,6 +54,7 @@ function App() {
     localStorage.setItem('cart',JSON.stringify(modifiedCart));
   }
  
+  
   
   return (
     <div className="App" >
