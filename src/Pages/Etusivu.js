@@ -3,6 +3,7 @@ import '../App.css';
 import 'bootstrap/dist/css/bootstrap.css';
 import Carousel from 'react-bootstrap/Carousel';
 import axios from 'axios';
+import {useParams} from 'react-router-dom';
 import {Link} from 'react-router-dom';
 
 
@@ -12,7 +13,23 @@ const url = 'http://localhost/verkkopalveluprojekti-backend/';
 export default function Etusivu() {
   
   const [categories, setCategories] = useState([]);
+  const [products, setProducts] = useState([]);
+  const [categoryName, setCategoryName] = useState('');
 
+  let params = useParams();
+
+  useEffect(() => {
+    console.log(url + 'products/getproducts.php/' + 1);
+      axios.get(url + 'products/getproducts.php/' + 1)
+        .then((response) => {
+          const json = response.data;
+          console.log(json);
+          setCategoryName(json.tuoteryhma);
+          setProducts(json.tuote);
+      }).catch (error => {
+        alert(error.response === undefined ?  error : error.response.data.error);
+      })
+  }, [params])
 
     useEffect(() => {
       console.log(url);
@@ -50,11 +67,17 @@ export default function Etusivu() {
     <div className='col-6' id='carousel'>
       <Carousel variant="dark">
       <Carousel.Item>
-        <img
-          className="d-block w-10"
-          src="../Kuvat\carcassonne-the-princess-the-dragon-nordic-2925iA9D2C7A24C5CBDD72EA339CC093B9330A8EBE9A7.jpg"
-          alt="First slide"
-        />
+
+      {products.map(tuote => (
+        <div className= 'container-tuote'>
+        <div key={tuote.tuotenro}>
+          <div>
+            <img className='tuotekuva' src={url + '/images/' + tuote.kuva} alt='Loading'/>
+          </div>
+        </div>
+        </div>
+      ))}
+      
         <Carousel.Caption>
           <h5 className="pelinimi">Tässä peli nro 1</h5>
           <p className="kuvaus">Vau mikä peli. Haluaisit varmasti ostaa tämän!</p>
