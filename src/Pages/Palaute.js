@@ -57,12 +57,9 @@ function App() {
         </div>
         <div class="mb-3">
         <label class="form-label">Palaute</label>
-        <input type="text" class="form-control" />
+        <input type="text" class="form-control" value={palaute} placeholder='Kerro mitä mieltä olet.' onChange={e => setPalaute(e.target.value)}/>
         </div>
-        <div class="mb-3 form-check">
-        <input type="checkbox" class="form-check-input" value={palaute} placeholder='Kerro mitä mieltä olet.' onChange={e => setPalaute(e.target.value)}/>
-        <label class="form-check-label" >Ruksaa laatikko jos haluat että vastaamme sinulle.</label>
-        </div>
+        
         <button type="submit" class="btn btn-primary">Lähetä</button>
         </form>
         </div>
