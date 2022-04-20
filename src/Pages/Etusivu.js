@@ -67,18 +67,17 @@ export default function Etusivu() {
     <div className='col-6' id='carousel'>
       <Carousel variant="dark">
       <Carousel.Item>
+
       {products.map(tuote => (
         <div className= 'container-tuote'>
         <div key={tuote.tuotenro}>
           <div>
             <img className='tuotekuva' src={url + '/images/' + tuote.kuva} alt='Loading'/>
           </div>
-          <h3>{tuote.tuotenimi}</h3>
-          <p>{tuote.hinta}€</p>
-          <p>{tuote.tietoa}</p>
         </div>
         </div>
       ))}
+      
         <Carousel.Caption>
           <h5 className="pelinimi">Tässä peli nro 1</h5>
           <p className="kuvaus">Vau mikä peli. Haluaisit varmasti ostaa tämän!</p>
