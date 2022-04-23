@@ -4,6 +4,7 @@ import {Link} from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.css';
 import uuid from 'react-uuid';
 import { createRef } from 'react/cjs/react.production.min';
+import axios from 'axios';
 
 
 
@@ -28,12 +29,13 @@ export default function Cart({cart,removeFromCart, updateAmount}) {
     setInputIndex(index);
   } */
 
+
   let sum = 0;
 
   //console.log(cart.length)
   return(
     <div className='ostoskoritausta'>
-      <h3 className='header-1'>Valitsemasi tuotteet</h3>
+      <h3 className='header-1'>Ostoskori</h3>
       <table className='table'>
         <tbody>
           {cart.map((tuote, index) => {
@@ -54,6 +56,36 @@ export default function Cart({cart,removeFromCart, updateAmount}) {
           </tr>
         </tbody>
       </table>
+      {cart.length > 0 && 
+        <>
+        <h3 className='header'> Asiakastiedot </h3>
+        <form onSubmit={save}>
+          <div className='form-group'>
+            <label>Etunimi:</label>
+            <input className='form-conrol' onChange={e = setEtunimi(e.target.value)}/>
+          </div>
+          <div className='form-group'>
+            <label>Sukunimi:</label>
+            <input className='form-conrol' onChange={e = setSukunimi(e.target.value)}/>
+          </div>
+          <div className='form-group'>
+            <label>Osoite:</label>
+            <input className='form-conrol' onChange={e = setOsoite(e.target.value)}/>
+          </div>
+          <div className='form-group'>
+            <label>Postinumero:</label>
+            <input className='form-conrol' onChange={e = setPostinro(e.target.value)}/>
+          </div>
+          <div className='form-group'>
+            <label>Postitoimipaikka:</label>
+            <input className='form-conrol' onChange={e = setPostitmp(e.target.value)}/>
+          </div>
+          <div className='buttons'>
+            <button className='btn btn-primary' id="tilausnappi"> Tilaa </button>
+          </div>
+        </form>
+        </>      
+      } 
     </div>
   )
 }

@@ -56,6 +56,8 @@ max-width: 100%;
   float: right;
   margin-left: 30em;
   margin-top: 40px;
+  font-size: 120%;
+  font-family: 'Josefin Slab', serif;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -299,6 +301,7 @@ h1{
 footer{
   background-color: #cca7fc;
   text-align: center;
+  font-family: 'Josefin Slab', serif;
   overflow: hidden;
   left: 0;
   right: 0;
