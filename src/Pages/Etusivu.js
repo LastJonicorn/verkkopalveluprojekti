@@ -3,6 +3,7 @@ import '../App.css';
 import 'bootstrap/dist/css/bootstrap.css';
 import Carousel from 'react-bootstrap/Carousel';
 import axios from 'axios';
+import {useParams} from 'react-router-dom';
 import {Link} from 'react-router-dom';
 
 
@@ -12,7 +13,51 @@ const url = 'http://localhost/verkkopalveluprojekti-backend/';
 export default function Etusivu() {
   
   const [categories, setCategories] = useState([]);
+  const [product1, setProduct1] = useState(null);
+  const [product2, setProduct2] = useState(null);
+  const [product3, setProduct3] = useState(null);
+  const [categoryName, setCategoryName] = useState('');
 
+  let params = useParams();
+
+  useEffect(() => {
+    console.log(url + 'products/getproducts.php/' + 1);
+      axios.get(url + 'products/getproducts.php/' + 1)
+        .then((response) => {
+          const json = response.data;
+          console.log(json);
+          setCategoryName(json.tuoteryhma);
+          setProduct1(json.tuote[0]);
+      }).catch (error => {
+        alert(error.response === undefined ?  error : error.response.data.error);
+      })
+  }, [params])
+
+  useEffect(() => {
+    console.log(url + 'products/getproducts.php/' + 1);
+      axios.get(url + 'products/getproducts.php/' + 1)
+        .then((response) => {
+          const json = response.data;
+          console.log(json);
+          setCategoryName(json.tuoteryhma);
+          setProduct2(json.tuote[1]);
+      }).catch (error => {
+        alert(error.response === undefined ?  error : error.response.data.error);
+      })
+  }, [params])
+
+  useEffect(() => {
+    console.log(url + 'products/getproducts.php/' + 1);
+      axios.get(url + 'products/getproducts.php/' + 1)
+        .then((response) => {
+          const json = response.data;
+          console.log(json);
+          setCategoryName(json.tuoteryhma);
+          setProduct3(json.tuote[2]);
+      }).catch (error => {
+        alert(error.response === undefined ?  error : error.response.data.error);
+      })
+  }, [params])
 
     useEffect(() => {
       console.log(url);
@@ -50,38 +95,55 @@ export default function Etusivu() {
     <div className='col-6' id='carousel'>
       <Carousel variant="dark">
       <Carousel.Item>
-        <img
-          className="d-block w-10"
-          src="../Kuvat\carcassonne-the-princess-the-dragon-nordic-2925iA9D2C7A24C5CBDD72EA339CC093B9330A8EBE9A7.jpg"
-          alt="First slide"
-        />
-        <Carousel.Caption>
-          <h5 className="pelinimi">Tässä peli nro 1</h5>
-          <p className="kuvaus">Vau mikä peli. Haluaisit varmasti ostaa tämän!</p>
-        </Carousel.Caption>
-      </Carousel.Item>
-      <Carousel.Item>
-        <img
-          className="d-block w-20"
-          src="../Kuvat\pic332870.jpg"
-          alt="Second slide"
-        />
-        <Carousel.Caption>
-          <div className="peliteksti">
-            <h5 className="pelinimi">Tässä peli nro 2</h5>
-            <p className="kuvaus">Vau mikä peli. Haluaisit varmasti ostaa tämän!</p>
+
+    {/*   {products.map(tuote => (
+        <div className= 'container-Car'>
+        <div key={tuote.tuotenro}>
+          <div>
+            <img className='tuotekuvaCar' src={url + '/images/' + tuote.kuva} alt='Loading'/>
           </div>
+        </div>
+        </div>
+      ))} */}
+
+<div className= 'container-Car'>
+        <div key={product1?.tuotenro}>
+          <div>
+            <img className='tuotekuvaCar' src={url + '/images/' + product1?.kuva} alt='Loading'/>
+          </div>
+        </div>
+        </div>      
+        <Carousel.Caption>
+        <div class='peliteksti' key={product1?.tuotenro}>
+            <h5 className="pelinimi">{product1?.tuotenimi}</h5>
+            <p className="kuvaus">{product1?.tietoa}</p>
+        </div>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
-        <img
-          className="d-block w-30"
-          src="../Kuvat\pic3518231.jpg"
-          alt="Third slide"
-        />
+      <div key={product2?.tuotenro}>
+          <div>
+            <img className='tuotekuvaCar' src={url + '/images/' + product2?.kuva} alt='Loading'/>
+          </div>
+        </div>
         <Carousel.Caption>
-          <h5 className="pelinimi">Tässä peli nro 3</h5>
-          <p className="kuvaus">Vau mikä peli. Haluaisit varmasti ostaa tämän!</p>
+        <div class='peliteksti' key={product2?.tuotenro}>
+            <h5 className="pelinimi">{product2?.tuotenimi}</h5>
+            <p className="kuvaus">{product2?.tietoa}</p>
+        </div>
+        </Carousel.Caption>
+      </Carousel.Item>
+      <Carousel.Item>
+      <div key={product3?.tuotenro}>
+          <div>
+            <img className='tuotekuvaCar' src={url + '/images/' + product3?.kuva} alt='Loading'/>
+          </div>
+        </div>
+        <Carousel.Caption>
+        <div class='peliteksti' key={product3?.tuotenro}>
+            <h5 className="pelinimi">{product3?.tuotenimi}</h5>
+            <p className="kuvaus">{product3?.tietoa}</p>
+        </div>
         </Carousel.Caption>
       </Carousel.Item>
       </Carousel>

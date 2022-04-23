@@ -162,6 +162,7 @@ h1{
 .carousel-caption p{
   font-size: 1.5em;
   color: rgb(255, 163, 163);
+  margin-top: 5em;
 }
 /* ALE */
 
@@ -379,7 +380,7 @@ footer{
 .kuvaus {
   position: relative;
   top: 60px;
-  background: rgba(0, 0, 0, 0.6) /* Pelin kuvauksen taustaväri */
+  background: rgba(0, 0, 0, 0.6) /* Pelin kuvauksen taustaväri */;
 }
 
 #navbar{
