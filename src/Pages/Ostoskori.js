@@ -5,12 +5,21 @@ import 'bootstrap/dist/css/bootstrap.css';
 import uuid from 'react-uuid';
 import { createRef } from 'react/cjs/react.production.min';
 import axios from 'axios';
+import { toBeEmpty } from '@testing-library/jest-dom/dist/matchers';
 
+const url = 'http://localhost/verkkopalveluprojekti-backend/';
 
-
-export default function Cart({cart,removeFromCart, updateAmount}) {
+export default function Cart({cart,removeFromCart, empty}) {
   const [inputs,_] = useState([]);
   const [inputIndex, setInputIndex] = useState(-1);
+
+  const [etunimi, setEtunimi] = useState('');
+  const [sukunimi, setSukunimi] = useState('');
+  const [osoite, setOsoite] = useState('');
+  const [postinro, setPostinro] = useState('');
+  const [postitmp, setPostitmp] = useState('');
+  const [finished, setFinished] = useState(false);
+
 
   /* useEffect(() =>{
     for (let i = 0; i < cart.length; i++){
@@ -29,10 +38,35 @@ export default function Cart({cart,removeFromCart, updateAmount}) {
     setInputIndex(index);
   } */
 
+  function order(e) {
+    e.preventDefault();
+
+    const json = JSON.stringify({
+      etunimi : etunimi,
+      sukunimi : sukunimi,
+      osoite : osoite,
+      postinro : postinro,
+      postitmp : postitmp,
+      cart : cart
+    });
+    
+    axios.post(url + '/order/save.php', json,{
+      headers : {
+        'Accept' : 'application/json',
+        'Content-Type' : 'application/json'
+      }
+    })
+    then(() => {
+      empty();
+      setFinished(true);
+    }).catch(error => {
+      alert(error.response === undefined ? error : error.response.data.error);
+    });
+  } 
 
   let sum = 0;
 
-  //console.log(cart.length)
+if(finished === false){
   return(
     <div className='ostoskoritausta'>
       <h3 className='header-1'>Ostoskori</h3>
@@ -59,26 +93,26 @@ export default function Cart({cart,removeFromCart, updateAmount}) {
       {cart.length > 0 && 
         <>
         <h3 className='header'> Asiakastiedot </h3>
-        <form onSubmit={save}>
+        <form onSubmit={order}>
           <div className='form-group'>
             <label>Etunimi:</label>
-            <input className='form-conrol' onChange={e = setEtunimi(e.target.value)}/>
+            <input className='form-conrol' onChange={e => setEtunimi(e.target.value)}/>
           </div>
           <div className='form-group'>
             <label>Sukunimi:</label>
-            <input className='form-conrol' onChange={e = setSukunimi(e.target.value)}/>
+            <input className='form-conrol' onChange={e => setSukunimi(e.target.value)}/>
           </div>
           <div className='form-group'>
             <label>Osoite:</label>
-            <input className='form-conrol' onChange={e = setOsoite(e.target.value)}/>
+            <input className='form-conrol' onChange={e => setOsoite(e.target.value)}/>
           </div>
           <div className='form-group'>
             <label>Postinumero:</label>
-            <input className='form-conrol' onChange={e = setPostinro(e.target.value)}/>
+            <input className='form-conrol' onChange={e => setPostinro(e.target.value)}/>
           </div>
           <div className='form-group'>
             <label>Postitoimipaikka:</label>
-            <input className='form-conrol' onChange={e = setPostitmp(e.target.value)}/>
+            <input className='form-conrol' onChange={e => setPostitmp(e.target.value)}/>
           </div>
           <div className='buttons'>
             <button className='btn btn-primary' id="tilausnappi"> Tilaa </button>
@@ -88,4 +122,8 @@ export default function Cart({cart,removeFromCart, updateAmount}) {
       } 
     </div>
   )
+} else {
+  return (<h3> Kiitos tilauksestasi! </h3>);
+  }
+
 }
