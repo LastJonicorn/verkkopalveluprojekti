@@ -93,26 +93,26 @@ if(finished === false){ */
       {cart.length > 0 && 
         <>
         <h3 className='header'> Asiakastiedot </h3>
-        <form onSubmit={order}>
+        <form onSubmit={order} id="asiakastiedot">
           <div className='form-group'>
-            <label>Etunimi:</label>
-            <input className='form-conrol' onChange={e => setEtunimi(e.target.value)}/>
+            <input id='tietokenttä' className='form-conrol' onChange={e => setEtunimi(e.target.value)}
+             placeholder="Etunimi" />
           </div>
           <div className='form-group'>
-            <label>Sukunimi:</label>
-            <input className='form-conrol' onChange={e => setSukunimi(e.target.value)}/>
+            <input id='tietokenttä' className='form-conrol' onChange={e => setSukunimi(e.target.value)}
+             placeholder="Sukunimi" />
+          </div>
+          <div className='form-group'>     
+            <input id='tietokenttä' className='form-conrol' onChange={e => setOsoite(e.target.value)}
+             placeholder="Osoite" />
           </div>
           <div className='form-group'>
-            <label>Osoite:</label>
-            <input className='form-conrol' onChange={e => setOsoite(e.target.value)}/>
+            <input id='tietokenttä' className='form-conrol' onChange={e => setPostinro(e.target.value)}
+             placeholder="Postinumero" />
           </div>
           <div className='form-group'>
-            <label>Postinumero:</label>
-            <input className='form-conrol' onChange={e => setPostinro(e.target.value)}/>
-          </div>
-          <div className='form-group'>
-            <label>Postitoimipaikka:</label>
-            <input className='form-conrol' onChange={e => setPostitmp(e.target.value)}/>
+            <input id='tietokenttä' className='form-conrol' onChange={e => setPostitmp(e.target.value)}
+             placeholder="Postitoimipaikka" />
           </div>
           <div className='buttons'>
             <button className='btn btn-primary' id="tilausnappi"> Tilaa </button>
