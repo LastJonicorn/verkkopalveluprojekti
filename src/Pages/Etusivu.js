@@ -151,19 +151,19 @@ export default function Etusivu() {
 
 <br/><br/>
 
-    <div className="col" id="ale">
+    <div className="col">
     <ul className="nav flex-column" id="ale" > 
           <li className="nav-item" id="aletuote">
-            <a className="nav-link" href="#">aletuote</a>
-            <img src="..\Kuvat\i25369691w800h465.jpg" id="alekuva"/>
+            <h4 id='aleteksti'>aletuote</h4>
+            <img id='alekuva' src={url + '/images/' + product3?.kuva} alt='Loading'/>
+            <p id='alehinta'>{product3?.hinta}€</p>
+            <p id='uusihinta'>17€</p>
           </li>
           <li className="nav-item"  id="aletuote">
-            <a className="nav-link" href="#">aletuote</a>
-            <img src="../Kuvat/1782_1200x1200.jpg" id="alekuva"/>
-          </li>
-          <li className="nav-item"  id="aletuote">
-            <a className="nav-link" href="#">aletuote</a>
-            <img src="../Kuvat/4015566033481xxl.jpg" id="alekuva"/>
+          <h4 id='aleteksti'>aletuote</h4>
+            <img id='alekuva' src={url + '/images/' + product1?.kuva} alt='Loading'/>
+            <p id='alehinta'>{product1?.hinta}€</p>
+            <p id='uusihinta'>30€</p>
           </li>
     </ul>
     </div>

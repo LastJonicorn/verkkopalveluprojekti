@@ -175,6 +175,19 @@ h1{
   border-radius: 15px;
   margin-top: 40px;
 }
+#aleteksti{
+  color: black;
+}
+#alehinta{
+  color: red;
+  font-weight: bold;
+  text-decoration:line-through ;
+}
+#uusihinta{
+  color: black;
+  font-weight: bold;
+  text-decoration:none;
+}
 .ale{
   width: 10em;
   margin-left: 20%;
