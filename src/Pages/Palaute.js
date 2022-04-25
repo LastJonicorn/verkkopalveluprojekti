@@ -52,7 +52,7 @@ function App() {
         <h2>Haluatko antaa palautetta?</h2>
         <div class="mb-3">
         <label class="form-label">Sähköposti</label>
-        <input type="email" class="form-control" aria-describedby="emailHelp" value={sahkoposti} placeholder='esimerkki@weleho.com' onChange={e => setSahkoposti(e.target.value)}/>
+        <input type="email" class="form-control" aria-describedby="emailHelp"  placeholder='esimerkki@weleho.com' value={sahkoposti} onChange={e => setSahkoposti(e.target.value)}/>
         <div id="emailHelp" class="form-text">Vastaamme sähköpostitse palautteeseen jos sitä haluat.</div>
         </div>
         <div class="mb-3">
