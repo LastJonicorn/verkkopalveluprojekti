@@ -342,6 +342,19 @@ h1{
   border: solid #534d56;
   padding: 5px;
 }
+#tilausnappi{
+  font-family:'Josefin Slab', serif;
+  font-size: 30px;
+  font-weight: bolder;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-color: #0f024c;
+}
+#tilausnappi:hover{
+  background-color: #7229d2;
+  border-color: #dc7dff;
+  border-width: 3px;
+}
 
 
 /* FOOTER */ 
