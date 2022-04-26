@@ -121,15 +121,24 @@ h1{
   height: 95%;
 }
 #sivukategoria{
+  padding-top: 2.5em;
+}
+#sivukategoria a{
   border-style: solid;
+  color: black;
+  margin-top: 2em;
   border-color: #F8F1FF;
-  background-color: #F8F1FF;
-  height: 14%;
-  text-decoration: solid #363138 underline;
   font-size: 2em;
   text-decoration: none;
   font-family: 'Josefin Slab', serif;
+  height:max-content;
+
 }
+.col-2{
+  background-color: #F8F1FF;
+  height:max-content;
+}
+
 #kategoriaTxt{
   color:#363138;
   font-family: 'Josefin Slab', serif;
