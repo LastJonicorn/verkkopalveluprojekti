@@ -1,7 +1,7 @@
 // TÄHÄN ETEEN VIELÄ 5. SIVULTA PÄTKÄ
 
 
-if (!addingCategory) {
+/* if (!addingCategory) {
     return (
         <>
             <h3>Hallinnoi kategorioita</h3>
@@ -32,3 +32,4 @@ if (!addingCategory) {
     )
 }
 
+*/
