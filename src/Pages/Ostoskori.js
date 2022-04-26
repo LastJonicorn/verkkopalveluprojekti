@@ -57,7 +57,7 @@ export default function Cart({cart,removeFromCart, empty}) {
       }
     })
     .then(() => {
-      empty();
+      removeFromCart();
       setFinished(true);
     }).catch(error => {
       alert(error.response === undefined ? error : error.response.data.error);
