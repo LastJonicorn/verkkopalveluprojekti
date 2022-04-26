@@ -47,7 +47,7 @@ export default function Cart({cart,removeFromCart, empty}) {
       osoite : osoite,
       postinro : postinro,
       postitmp : postitmp,
-      cart : cart
+      cart : cart,
     });
     
     axios.post(url + '/order/save.php', json,{
@@ -56,17 +56,18 @@ export default function Cart({cart,removeFromCart, empty}) {
         'Content-Type' : 'application/json'
       }
     })
-    /* then(() => {
+    .then(() => {
       empty();
       setFinished(true);
     }).catch(error => {
       alert(error.response === undefined ? error : error.response.data.error);
-    }); */
+    }); 
   } 
 
   let sum = 0;
-/* 
-if(finished === false){ */
+  
+
+if(finished === false){ 
   return(
     <div className='ostoskoritausta'>
       <h3 className='header-1'>Ostoskori</h3>
@@ -122,8 +123,8 @@ if(finished === false){ */
       } 
     </div>
   )
-} /* else {
+} else {
   return (<h3> Kiitos tilauksestasi! </h3>);
   }
 
-} */
+} 
