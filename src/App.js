@@ -10,7 +10,7 @@ import Lautapelit from './Pages/Lautapelit';
 import Uutiset from './Pages/Uutiset';
 import Palaute from './Pages/Palaute';
 import KategoriaLista from './Pages/KategoriaLista';
-import KategoriaLisäys from './Pages/KategoriaLisäys';
+import KategoriaLisays from './Pages/KategoriaLisays';
 
 
 import {Route, Routes} from 'react-router';
@@ -91,7 +91,7 @@ function App() {
       <Route path='/Uutiset' element={<Uutiset/>}/>
       <Route path='/Palaute' element={<Palaute/>}/>
       <Route path='/KategoriaLista' element={<KategoriaLista url={url}/>}/>
-      <Route path='/KategoriaLisäys' element={<KategoriaLisäys url={url}/>}/>
+      <Route path='/KategoriaLisays' element={<KategoriaLisays url={url}/>}/>
 
     </Routes>
   </div>
