@@ -1,5 +1,6 @@
 import axios from 'axios';
-import CategoryList from '../components/CategoryList';
+import KategoriaLista from './KategoriaLista';
+import React, { useState, useEffect } from 'react';
 
 export default function ManageCategories({url}) {
     const [newCategory, setNewCategory] = useState("");
@@ -9,7 +10,7 @@ export default function ManageCategories({url}) {
     function saveCategory(e) {
         e.preventDefault();
         const json = JSON.stringify({name: newCategory});
-        axios.post(url + 'products/addcategory.php',json,{
+        axios.post(url + 'products/addcategories.php',json,{
             headers: {
                 'Content-Type' : 'application/json'
             }
@@ -30,7 +31,7 @@ export default function ManageCategories({url}) {
             <h3>Hallinnoi kategorioita</h3>
             <div>
                 <label>Kategoria</label>
-                <CategoryList
+                <KategoriaLista
                     url={url}
                     selectedCategory={selectedCategory}
                     setSelectedCategory={setSelectedCategory}
@@ -49,7 +50,7 @@ export default function ManageCategories({url}) {
                     <input type="text" value={newCategory} onChange={(e) => setNewCategory(e.target.value)}></input>
                 </div>
                 <button type="button" onClick={() => setAddingCategory(false)}>Peruuta</button>
-                <button type="submit" onClick={() => setAddingCategory(false)}>Tallenna</button>
+                <button type="submit">Tallenna</button>
             </form>
         </>
     )
