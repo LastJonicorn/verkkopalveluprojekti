@@ -9,6 +9,9 @@ import Ostoskori from './Pages/Ostoskori';
 import Lautapelit from './Pages/Lautapelit';
 import Uutiset from './Pages/Uutiset';
 import Palaute from './Pages/Palaute';
+import KategoriaLista from './Pages/KategoriaLista';
+import KategoriaLisäys from './Pages/KategoriaLisäys';
+
 
 import {Route, Routes} from 'react-router';
 import {useState, useEffect} from 'react';
@@ -87,6 +90,9 @@ function App() {
       <Route path='/products/:tuotenro' element={<Lautapelit url={url}/>}/>      
       <Route path='/Uutiset' element={<Uutiset/>}/>
       <Route path='/Palaute' element={<Palaute/>}/>
+      <Route path='/KategoriaLista' element={<KategoriaLista url={url}/>}/>
+      <Route path='/KategoriaLisäys' element={<KategoriaLisäys url={url}/>}/>
+
     </Routes>
   </div>
 

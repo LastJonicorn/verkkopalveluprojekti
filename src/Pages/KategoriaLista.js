@@ -4,8 +4,6 @@ import axios from 'axios';
 export default function KategoriaLista({url, selectedCategory, setSelectedCategory}) {
     const [categories, setCategories] = useState([]);
 
-    const url = 'http://localhost/verkkopalveluprojekti-backend/';
-
     useEffect(() => {
         axios.get(url + 'products/getcategories.php')
         .then((response) => {
