@@ -1,7 +1,30 @@
-// TÄHÄN ETEEN VIELÄ 5. SIVULTA PÄTKÄ
+import axios from 'axios';
+import CategoryList from '../components/CategoryList';
+
+export default function ManageCategories({url}) {
+    const [newCategory, setNewCategory] = useState("");
+    const [selectedCategory, setSelectedCategory] = useState(null);
+    const [addingCategory, setAddingCategory] = useState(false);
+
+    function saveCategory(e) {
+        e.preventDefault();
+        const json = JSON.stringify({name: newCategory});
+        axios.post(url + 'products/addcategory.php',json,{
+            headers: {
+                'Content-Type' : 'application/json'
+            }
+        })
+        .then((response) => {
+            setNewCategory('');
+            setAddingCategory(false);
+            setSelectedCategory(response.data);
+        }).catch(error => {
+            alert(error.response === undefined ? error : error.response.data.error);
+        });
+    }
 
 
-/* if (!addingCategory) {
+    if (!addingCategory) {
     return (
         <>
             <h3>Hallinnoi kategorioita</h3>
@@ -32,4 +55,4 @@
     )
 }
 
-*/
+}
