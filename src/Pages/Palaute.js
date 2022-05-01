@@ -8,7 +8,7 @@ import {Container, Nav, NavDropdown, Form, FormControl, Button} from 'react-boot
 
 
 
-const URL = 'http://localhost/palaute-backend/';
+const URL = 'http://localhost/verkkopalveluprojekti-backend/';
 
 function App() {
 
@@ -18,9 +18,9 @@ function App() {
 
 
     useEffect(() => {
-        axios.get(URL)
+        axios.get(URL + 'feedback/index.php')
         .then((response) => {
-        //console.log(response.data);
+        console.log(response.data);
           setPalautteet(response.data);
         }).catch(error =>{
           alert(error.response ? error.response.data.error : error);
@@ -31,7 +31,7 @@ function App() {
       function save(e){
         e.preventDefault();
         const json = JSON.stringify({sahkoposti:sahkoposti, palaute:palaute});
-        axios.post(URL + 'add.php',json, {
+        axios.post(URL + 'feedback/add.php',json, {
           headers: {
             'Content-Type' : 'application/json'
           }
