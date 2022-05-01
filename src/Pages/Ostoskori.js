@@ -10,8 +10,8 @@ import { toBeEmpty } from '@testing-library/jest-dom/dist/matchers';
 const url = 'http://localhost/verkkopalveluprojekti-backend/';
 
 export default function Cart({cart,removeFromCart, empty}) {
-  const [inputs,_] = useState([]);
-  const [inputIndex, setInputIndex] = useState(-1);
+  /* const [inputs,_] = useState([]);
+  const [inputIndex, setInputIndex] = useState(-1); */
 
   const [etunimi, setEtunimi] = useState('');
   const [sukunimi, setSukunimi] = useState('');

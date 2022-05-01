@@ -177,7 +177,9 @@ export default function Etusivu() {
     <a className="col" id='feedback' href='/Palaute'>
       <div className="" id=''> PALAUTE</div>
     </a>
-      <div className="col" id="suosittelut"> SUOSITTELUT </div>
+    <a className="col" id="kysymykset"  href='/kysymykset'>
+      <div className="" id="">  FAQ </div>
+    </a>
       <a className="col"  id="uutiset" href="/Uutiset">UUTISET</a>
   </div>
 </div>
