@@ -50,7 +50,7 @@ export default function ManageCategories({url}) {
                     <input type="text" value={newCategory} onChange={(e) => setNewCategory(e.target.value)}></input>
                 </div>
                 <button type="button" onClick={() => setAddingCategory(false)}>Peruuta</button>
-                <button type="submit" onClick={() => setAddingCategory(false)}>Tallenna</button>
+                <button type="submit">Tallenna</button>
             </form>
         </>
     )
