@@ -15,7 +15,10 @@ function App() {
   const [sahkoposti,setSahkoposti] = useState('');
   const [palaute,setPalaute] = useState('');
   const [palautteet,setPalautteet] = useState([]);
+  const [kategoria, setKategoriat] = useState([]);
+  /* const [selectedCategory, setSelectedCategory] = useState([]); */
 
+  
 
 useEffect(() => {
   axios.get(URL + 'feedback/index.php')
@@ -28,35 +31,39 @@ useEffect(() => {
 }, [])
 
 //Kategorian haku jos haluaa hakea tietyn tuotteen mistä antaa palautetta
-  const [categories, setCategories] = useState([]);
+/*   
   useEffect(() => {
   axios.get(URL + 'products/getcategories.php')
   .then((response) => {
   const json = response.data;
-  setCategories(json);
+  setKategoriat(json);
   }).catch (error => {
   alert(error.response === undefined ?  error : error.response.data.error);
   })
-}, [])
+}, []) */
 
 //Tuotteen haku äsköisestä syystä
 
-const [selectedCategory, setSelectedCategory] = useState([]);
-const [products, setProducts] = useState([]);
+/* const [products, setProducts] = useState([]);
+
+
+
+
 useEffect(() => {
-axios.get(URL + 'products/getproducts.php' + selectedCategory)
+axios.get(URL + 'products/getproducts.php/' + selectedCategory)
 .then((response) => {
-const json = response.data;
-setProducts(json.tuote);
+const json2 = response.data;
+console.log(json2);
+setProducts(json2);
 }).catch (error => {
 alert(error.response === undefined ?  error : error.response.data.error);
 })
-}, [])
+}, []) */
 
 
 function save(e){
   e.preventDefault();
-  const json = JSON.stringify({sahkoposti:sahkoposti, palaute:palaute});
+  const json = JSON.stringify({sahkoposti:sahkoposti, palaute:palaute,tuoteryhmanimi:kategoria});
   axios.post(URL + 'feedback/add.php',json, {
   headers: {
   'Content-Type' : 'application/json'
@@ -66,6 +73,8 @@ function save(e){
   setPalautteet(palautteet => [...palautteet,response.data]);
   setSahkoposti('');
   setPalaute('');
+  
+ /*  console.log(selectedCategory); */
   }).catch(error=>{
   alert(error.response ? error.response.data.error : error);
   })
@@ -77,16 +86,30 @@ return(
     <form onSubmit={save}>
         <h2>Haluatko antaa palautetta?</h2>
         <div class="mb-3">
-      <select class="form-select" id="inputGroupSelect01"  onChange={e => setSelectedCategory(e.target.value)}>
-        <option selected>Choose...</option>
-        {
-        categories.map(tuoteryhma => {
-        return(
-        <option eventKey={tuoteryhma.tuoteryhmanimi}>{tuoteryhma.tuoteryhmanimi}</option>
-        );
-        })
-        }
-      </select>
+       
+{/*<select class="form-select" id="inputGroupSelect01"    onChange={setSelectedCategory} >
+<option selected>Choose...</option>
+{
+kategoria.map(tuoteryhma => {
+return(
+<option key={tuoteryhma.tuoteryhmanimi}>{tuoteryhma.tuoteryhmanimi}</option>
+);
+})
+}
+
+</select> */}
+{/* {  <select class="form-select" id="inputGroupSelect01" >
+<option selected>Choose...</option>
+{
+products.map(tuote => {
+return(
+<option eventKey={tuote.tuotenimi}>{tuote.tuotenimi}</option>
+);
+})
+}
+</select>} */}
+
+
         <label class="form-label">Sähköposti</label>
         <input type="email" class="form-control" aria-describedby="emailHelp"  placeholder='esimerkki@weleho.com' value={sahkoposti} onChange={e => setSahkoposti(e.target.value)}/>
         <div id="emailHelp" class="form-text">Vastaamme sähköpostitse palautteeseen jos sitä haluat.</div>
