@@ -18,23 +18,6 @@ export default function Cart({cart,removeFromCart, empty}) {
   const [finished, setFinished] = useState(false);
 
 
-  /* useEffect(() =>{
-    for (let i = 0; i < cart.length; i++){
-      inputs[i] = React.createRef();
-    }
-  },[cart.length])
-/*  
-  useEffect(() => {
-    if (inputs.length > 0 && inputIndex > -1 && inputs[inputIndex].current !== null) {
-      inputs[inputIndex].current.focus();
-    }
-  },[cart]) */
-/* 
-  function changeAmount(e,tuote,index) {
-    updateAmount(e.target.value, tuote);
-    setInputIndex(index);
-  } */
-
   function order(e) {
     e.preventDefault();
 
@@ -47,7 +30,7 @@ export default function Cart({cart,removeFromCart, empty}) {
       cart : cart,
     });
     
-    axios.post(url + '/order/save.php', json,{
+    axios.post(url + 'order/save.php', json,{
       headers : {
         'Accept' : 'application/json',
         'Content-Type' : 'application/json'
