@@ -52,34 +52,36 @@ function save(e){
 
 
 return(
-  <div className="container p-4">
+  <div className="container">
+    <div class="row justify-content-center">
+    <div class="col-4" id='palaute_div'>
     <form onSubmit={save}>
-        <h2>Haluatko antaa palautetta?</h2>
-        <div class="mb-3">
-       
-
-      <label class="form-label">Etunimesi</label>
-        <input type="text" class="form-control"  placeholder='Esimerkkinimi' value={etunimi} onChange={e => setEtunimi(e.target.value)}/>
-
-        <label class="form-label">Sukunimesi</label>
-        <input type="text" class="form-control"  placeholder='Esimerkkisukunimi' value={sukunimi} onChange={e => setSukunimi(e.target.value)}/>
-
-        <label class="form-label">Sähköposti</label>
-        <input type="email" class="form-control" aria-describedby="emailHelp"  placeholder='esimerkki@weleho.com' value={sahkoposti} onChange={e => setSahkoposti(e.target.value)}/>
-        <div id="emailHelp" class="form-text">Vastaamme sähköpostitse palautteeseen jos sitä haluat.</div>
-        </div>
-        <div class="mb-3">
-        <label class="form-label">Palaute</label>
-        <input type="text" class="form-control" value={palaute} placeholder='Kerro mitä mieltä olet.' onChange={e => setPalaute(e.target.value)}/>
-        </div>
-        
-        <button type="submit" class="btn btn-primary">Lähetä</button>
-    </form>
-        </div>
-        
-    )
-
+      <h2>Haluatko antaa palautetta?</h2>
     
+      
+
+        <label class="form-label" id='palaute_label' >Etunimesi</label>
+        <input type="text" class="form-control input-lg" id='palaute_input'  placeholder='Esimerkkinimi' value={etunimi} onChange={e => setEtunimi(e.target.value)}/>
+
+        <label class="form-label " id='palaute_label' >Sukunimesi</label>
+        <input type="text" class="form-control input-lg" id='palaute_input'   placeholder='Esimerkkisukunimi' value={sukunimi} onChange={e => setSukunimi(e.target.value)}/>
+
+        <label class="form-label" id='palaute_label' >Sähköposti</label>
+        <input type="email" class="form-control input-lg" id='palaute_input'  aria-describedby="emailHelp"  placeholder='esimerkki@weleho.com' value={sahkoposti} onChange={e => setSahkoposti(e.target.value)}/>
+  
+        <div id="emailHelp" class="form-text">Vastaamme sähköpostitse palautteeseen jos sitä haluat.</div>
+      
+        <label class="form-label" id='palaute_label' >Palaute</label>
+        <input type="text" class="form-control input-lg" id='palaute_input' value={palaute} placeholder='Kerro mitä mieltä olet.' onChange={e => setPalaute(e.target.value)}/>
+        
+      
+      <button type="submit" class="btn btn-primary" id='palaute_button' >Lähetä</button>
+    </form>
+    </div>
+    </div>
+    </div>
+ 
+)
 }
 
 export default App;
