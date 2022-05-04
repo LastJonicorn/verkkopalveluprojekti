@@ -14,9 +14,9 @@ function App() {
 
   const [sahkoposti,setSahkoposti] = useState('');
   const [palaute,setPalaute] = useState('');
+  const [etunimi,setEtunimi] = useState('');
+  const [sukunimi,setSukunimi] = useState('');
   const [palautteet,setPalautteet] = useState([]);
-  const [kategoria, setKategoriat] = useState([]);
-  /* const [selectedCategory, setSelectedCategory] = useState([]); */
 
   
 
@@ -30,40 +30,10 @@ useEffect(() => {
   });
 }, [])
 
-//Kategorian haku jos haluaa hakea tietyn tuotteen mistä antaa palautetta
-/*   
-  useEffect(() => {
-  axios.get(URL + 'products/getcategories.php')
-  .then((response) => {
-  const json = response.data;
-  setKategoriat(json);
-  }).catch (error => {
-  alert(error.response === undefined ?  error : error.response.data.error);
-  })
-}, []) */
-
-//Tuotteen haku äsköisestä syystä
-
-/* const [products, setProducts] = useState([]);
-
-
-
-
-useEffect(() => {
-axios.get(URL + 'products/getproducts.php/' + selectedCategory)
-.then((response) => {
-const json2 = response.data;
-console.log(json2);
-setProducts(json2);
-}).catch (error => {
-alert(error.response === undefined ?  error : error.response.data.error);
-})
-}, []) */
-
 
 function save(e){
   e.preventDefault();
-  const json = JSON.stringify({sahkoposti:sahkoposti, palaute:palaute,tuoteryhmanimi:kategoria});
+  const json = JSON.stringify({etunimi:etunimi,sukunimi:sukunimi,sahkoposti:sahkoposti, palaute:palaute});
   axios.post(URL + 'feedback/add.php',json, {
   headers: {
   'Content-Type' : 'application/json'
@@ -73,8 +43,8 @@ function save(e){
   setPalautteet(palautteet => [...palautteet,response.data]);
   setSahkoposti('');
   setPalaute('');
-  
- /*  console.log(selectedCategory); */
+  setEtunimi('');
+  setSukunimi('');
   }).catch(error=>{
   alert(error.response ? error.response.data.error : error);
   })
@@ -82,50 +52,36 @@ function save(e){
 
 
 return(
-  <div className="container p-4">
+  <div className="container">
+    <div class="row justify-content-center">
+    <div class="col-4" id='palaute_div'>
     <form onSubmit={save}>
-        <h2>Haluatko antaa palautetta?</h2>
-        <div class="mb-3">
-       
-{/*<select class="form-select" id="inputGroupSelect01"    onChange={setSelectedCategory} >
-<option selected>Choose...</option>
-{
-kategoria.map(tuoteryhma => {
-return(
-<option key={tuoteryhma.tuoteryhmanimi}>{tuoteryhma.tuoteryhmanimi}</option>
-);
-})
-}
-
-</select> */}
-{/* {  <select class="form-select" id="inputGroupSelect01" >
-<option selected>Choose...</option>
-{
-products.map(tuote => {
-return(
-<option eventKey={tuote.tuotenimi}>{tuote.tuotenimi}</option>
-);
-})
-}
-</select>} */}
-
-
-        <label class="form-label">Sähköposti</label>
-        <input type="email" class="form-control" aria-describedby="emailHelp"  placeholder='esimerkki@weleho.com' value={sahkoposti} onChange={e => setSahkoposti(e.target.value)}/>
-        <div id="emailHelp" class="form-text">Vastaamme sähköpostitse palautteeseen jos sitä haluat.</div>
-        </div>
-        <div class="mb-3">
-        <label class="form-label">Palaute</label>
-        <input type="text" class="form-control" value={palaute} placeholder='Kerro mitä mieltä olet.' onChange={e => setPalaute(e.target.value)}/>
-        </div>
-        
-        <button type="submit" class="btn btn-primary">Lähetä</button>
-</form>
-        </div>
-        
-    )
-
+      <h2>Haluatko antaa palautetta?</h2>
     
+      
+
+        <label class="form-label" id='palaute_label' >Etunimesi</label>
+        <input type="text" class="form-control input-lg" id='palaute_input'  placeholder='Esimerkkinimi' value={etunimi} onChange={e => setEtunimi(e.target.value)}/>
+
+        <label class="form-label " id='palaute_label' >Sukunimesi</label>
+        <input type="text" class="form-control input-lg" id='palaute_input'   placeholder='Esimerkkisukunimi' value={sukunimi} onChange={e => setSukunimi(e.target.value)}/>
+
+        <label class="form-label" id='palaute_label' >Sähköposti</label>
+        <input type="email" class="form-control input-lg" id='palaute_input'  aria-describedby="emailHelp"  placeholder='esimerkki@weleho.com' value={sahkoposti} onChange={e => setSahkoposti(e.target.value)}/>
+  
+        <div id="emailHelp" class="form-text">Vastaamme sähköpostitse palautteeseen jos sitä haluat.</div>
+      
+        <label class="form-label" id='palaute_label' >Palaute</label>
+        <input type="text" class="form-control input-lg" id='palaute_input' value={palaute} placeholder='Kerro mitä mieltä olet.' onChange={e => setPalaute(e.target.value)}/>
+        
+      
+      <button type="submit" class="btn btn-primary" id='palaute_button' >Lähetä</button>
+    </form>
+    </div>
+    </div>
+    </div>
+ 
+)
 }
 
 export default App;

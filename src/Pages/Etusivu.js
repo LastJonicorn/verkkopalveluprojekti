@@ -77,7 +77,7 @@ export default function Etusivu() {
 {/*Navbar alkaa tästä*/}
 
 {/*Grid Layout alkaa tästä*/}
-  <div className='container'>
+  <div className='container' id='grid_left'>
     <div className="row">
       <div className="col-2">
         
