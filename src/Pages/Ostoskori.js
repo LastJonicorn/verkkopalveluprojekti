@@ -59,7 +59,7 @@ if(finished === false){
               <tr key ={uuid()}>
                 <td>{tuote.tuotenimi}</td>
                 <td>{tuote.hinta} € </td>
-                <td><a href="#" onClick={() => removeFromCart(tuote)} >Poista</a></td>
+                <td><a href="#" onClick={() => removeFromCart(tuote)} id="delete">Poista</a></td>
               </tr>
             )
           })}

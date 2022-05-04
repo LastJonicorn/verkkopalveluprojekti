@@ -452,8 +452,16 @@ footer{
   border: 5px solid black;
   border-radius: 15px;
 }
-#OstoskoriTuote img{
-  width: 6em;
+tr{
+  font-size: 25px;
+  font-family:'Josefin Slab', serif;
+}
+#delete{
+  text-decoration: none;
+  color:rgb(255, 255, 255);
+  border-style:solid rgb(108, 0, 2);
+  background-color:rgb(108, 0, 2);
+  padding:5px;
 }
 
 @keyframes App-logo-spin {
