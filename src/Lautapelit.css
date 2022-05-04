@@ -5,4 +5,19 @@
     background-size:cover;
     max-width: 100%;
 }
-
+#tuotepohja{
+    padding-left: 15%;
+}
+#kategorianimi{
+    text-align: center;
+    font-size: 60px;
+    border-style:solid ;
+    border-color: white;
+    margin-left: -0%;
+    margin-right: 10%;
+    padding: 10px;
+    background-color: #F8F1FF;
+}
+button{
+    margin-top: 20px;
+}

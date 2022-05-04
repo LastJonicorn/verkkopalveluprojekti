@@ -31,7 +31,7 @@ export default function Products({url, addToCart}) {
 
     <div className='container'>
     <div className="row">
-      <div className="col-12">        
+      <div className="col-12" id="tuotepohja">        
       <h2 id="kategorianimi">{categoryName}</h2>
       {products.map(tuote => (
         <div className= 'container-tuote'>
